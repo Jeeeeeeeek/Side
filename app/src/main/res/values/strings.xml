@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_lecture">Lecture</string>
+    <string name="title_activity_assessment_task">AssessmentTask</string>
+
+
+    <string name="midtermtwo"><![CDATA[<p>Exception handling is the process of responding to exceptions when a computer
+    program runs. An exception occurs when an unexpected event happens that requires special
+    processing.</p><br>
+
+    <p>Exception handling attempts to gracefully handle these situations so that a program does
+    not crash. Exception handling can be performed at both the software and hardware levels.</p><br>
+
+    <b>Hierarchy of Java Exception classes</b><br><br>
+
+
+    <p>The java.lang.Throwable class is the root class of Java Exception hierarchy which is inherited by
+    two subclasses: Exception and Error</p>
+    ]]></string>
+
+    <string name="midtermtwo_tryandcatch"><![CDATA[<p>•The <b>try</b> statement allows you to define a block of code to be tested for errors while it is
+    being executed.</p><br>
+
+    <p>•The <b>catch</b> statement allows you to define a block of code to be executed, if an error
+    occurs in the try block..</p><br>
+
+    <p>•The <b>throw</b> statement allows you to create a custom error.</p><br>
+
+    <b>Types of Java Exceptions</b> <br>
+
+    <p>There are mainly two types of exceptions: checked and unchecked. Here, an error is considered
+    as the unchecked exception. According to Oracle, there are three types of exceptions: </p> <br>
+
+    <p>1. Checked Exception <br>
+
+    •The classes which directly inherit Throwable class except RuntimeException and
+    Error are known as checked exceptions. Checked exceptions are checked at compile-
+    time. <br>
+
+    2. Unchecked Exception <br>
+
+    •The classes which inherit RuntimeException are known as unchecked exceptions.
+    Unchecked exceptions are not checked at compile-time, but they are checked at
+    runtime. <br>
+
+    2. Error <br>
+
+    •Error is irrecoverable <br>
+
+    </p>
+
+    ]]></string>
+
+    <string name="midtermtwo_tryandcatch"><![CDATA[<p>•The <b>try</b> statement allows you to define a block of code to be tested for errors while it is
+    being executed.</p><br>
+
+    <p>•The <b>catch</b> statement allows you to define a block of code to be executed, if an error
+    occurs in the try block..</p><br>
+
+    <p>•The <b>throw</b> statement allows you to create a custom error.</p><br>
+
+    <b>Types of Java Exceptions</b> <br>
+
+    <p>There are mainly two types of exceptions: checked and unchecked. Here, an error is considered
+    as the unchecked exception. According to Oracle, there are three types of exceptions: </p> <br>
+
+    <p>1. Checked Exception <br>
+
+    •The classes which directly inherit Throwable class except RuntimeException and
+    Error are known as checked exceptions. Checked exceptions are checked at compile-
+    time. <br>
+
+    2. Unchecked Exception <br>
+
+    •The classes which inherit RuntimeException are known as unchecked exceptions.
+    Unchecked exceptions are not checked at compile-time, but they are checked at
+    runtime. <br>
+
+    2. Error <br>
+
+    •Error is irrecoverable <br>
+
+    </p>
+
+    ]]></string>
+
+</resources>
