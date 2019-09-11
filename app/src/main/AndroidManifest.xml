@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/comprologo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MidtermTwo_TryAndCatch"></activity>
+        <activity android:name=".FinalOne"/>
+        <activity android:name=".MidtermTwo_TryAndCatch" />
         <activity android:name=".MidtermTwo" />
         <activity android:name=".MidtermOne" />
         <activity android:name=".PrelimFive" />
