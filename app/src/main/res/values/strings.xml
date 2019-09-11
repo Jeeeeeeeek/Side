@@ -32,7 +32,7 @@
     two subclasses: Exception and Error</p>
     ]]></string>
 
-    <string name="midtermtwo_midtermdefinedexception"><![CDATA[<p>•The <b>try</b> statement allows you to define a block of code to be tested for errors while it is
+    <string name="midtermtwo_midtermtryandcatch"><![CDATA[<p>•The <b>try</b> statement allows you to define a block of code to be tested for errors while it is
     being executed.</p><br>
 
     <p>•The <b>catch</b> statement allows you to define a block of code to be executed, if an error
