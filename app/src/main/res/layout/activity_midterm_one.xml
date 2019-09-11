@@ -650,6 +650,16 @@ lowercase, respectively."
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
 
+                    <ImageView
+                        android:id="@+id/imageViewMidterm1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitStart"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/midtermOneText"
+                        app:srcCompat="@drawable/image1" />
+
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
