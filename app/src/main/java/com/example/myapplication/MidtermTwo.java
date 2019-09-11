@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class MidtermTwo extends AppCompatActivity {
 
     TextView textView9;
-    Button tryandcatchButton;
+    Button tryandcatchButton, userdefineButton, assertionsButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +26,26 @@ public class MidtermTwo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MidtermTwo.this, MidtermTwo_TryAndCatch.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        userdefineButton = (Button)findViewById(R.id.userdefineButton);
+        userdefineButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermTwo.this, MidtermTwo_UserDefined.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        assertionsButton = (Button)findViewById(R.id.assertionsButton);
+        assertionsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermTwo.this, MidtermTwo_Assertion.class);
                 startActivity(intent);
                 finish();
             }

@@ -117,7 +117,7 @@
                         app:layout_constraintVertical_bias="0.0" />
 
                     <Button
-                        android:id="@+id/tryandcatchButton2"
+                        android:id="@+id/userdefineButton"
                         android:layout_width="200dp"
                         android:layout_height="35dp"
                         android:layout_marginTop="8dp"
@@ -128,7 +128,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/tryandcatchButton" />
 
                     <Button
-                        android:id="@+id/tryandcatchButton3"
+                        android:id="@+id/assertionsButton"
                         android:layout_width="200dp"
                         android:layout_height="35dp"
                         android:layout_marginTop="8dp"
@@ -138,7 +138,7 @@
                         android:textColor="#000"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tryandcatchButton2" />
+                        app:layout_constraintTop_toBottomOf="@+id/userdefineButton" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
