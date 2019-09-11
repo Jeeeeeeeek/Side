@@ -4,29 +4,32 @@
     android:layout_height="match_parent">
 
     <TableLayout
-        android:layout_width="400dp"
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#008D3333">
+            android:background="#000">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Method"
+                android:gravity="center"
                 android:padding="5dp"
-                android:gravity="center"/>
+                android:text="Escape sequence"
+                android:textColor="#ffe505" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:text="Description"
+                android:gravity="center"
                 android:padding="5dp"
-                android:gravity="center"/>
+                android:text="Description"
+                android:textColor="#ffe505" />
         </TableRow>
 
         <TableRow
@@ -35,19 +38,18 @@
             android:background="#fff">
 
             <TextView
-                android:text="boolean isLetter(char ch)\nboolean isDigit(char ch)"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="#000"/>
+                android:text="\\t"
+                android:textColor="#000" />
 
             <TextView
-                android:text="Determines whether the specified char value is a letter or a digit,
-respectively."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:textColor="#000"/>
+                android:text="Insert a tab in the text at this point."
+                android:textColor="#000" />
 
         </TableRow>
 
@@ -57,18 +59,18 @@ respectively."
             android:background="#eeeeee">
 
             <TextView
-                android:text="boolean isWhitespace(char ch)"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="#000"/>
+                android:text="\\b"
+                android:textColor="#000" />
 
             <TextView
-                android:text="Determines whether the specified char value is white space."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:textColor="#000"/>
+                android:text="Insert a backspace in the text at this point."
+                android:textColor="#000" />
 
         </TableRow>
 
@@ -78,19 +80,18 @@ respectively."
             android:background="#FFF">
 
             <TextView
-                android:text="boolean isUpperCase(char ch)\nboolean isLowerCase(char ch)"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="#000"/>
+                android:text="\\n"
+                android:textColor="#000" />
 
             <TextView
-                android:text="Determines whether the specified char value is uppercase or
-lowercase, respectively."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:textColor="#000"/>
+                android:text="Insert a newline in the text at this point."
+                android:textColor="#000" />
 
         </TableRow>
 
@@ -100,18 +101,18 @@ lowercase, respectively."
             android:background="#eeeeee">
 
             <TextView
-                android:text="char toUpperCase(char ch)\nchar toLowerCase(char ch)"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="#000"/>
+                android:text="\\r"
+                android:textColor="#000" />
 
             <TextView
-                android:text="Returns the uppercase or lowercase form of the specified char value."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:textColor="#000"/>
+                android:text="Insert a carriage return in the text at this point."
+                android:textColor="#000" />
 
         </TableRow>
 
@@ -121,18 +122,79 @@ lowercase, respectively."
             android:background="#FFF">
 
             <TextView
-                android:text="toString(char ch)"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="#000"/>
+                android:text="\\f"
+                android:textColor="#000" />
 
             <TextView
-                android:text="Returns a String object representing the specified character value — that is, a one-character string."
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:textColor="#000"/>
+                android:text="Insert a form feed in the text at this point."
+                android:textColor="#000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="\\&#39;"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Insert a single quote character in the text at this point."
+                android:textColor="#000" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="\\&quot;"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Insert a double quote character in the text at this point."
+                android:textColor="#000" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="\\\"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Insert a backslash character in the text at this point."
+                android:textColor="#000" />
 
         </TableRow>
     </TableLayout>

@@ -65,35 +65,64 @@
 
     ]]></string>
 
-    <string name="midtermtwo_tryandcatch"><![CDATA[<p>•The <b>try</b> statement allows you to define a block of code to be tested for errors while it is
-    being executed.</p><br>
+    <string name="midtermtwo_userdefinedexception"><![CDATA[<p>•User Defined Exception or custom exception is creating your own exception class and
+    throws that exception using ‘throw’ keyword. This can be done by extending the class
+    Exception.</p><br>
 
-    <p>•The <b>catch</b> statement allows you to define a block of code to be executed, if an error
-    occurs in the try block..</p><br>
+    <p>•There is no need to override any of the above methods available in the Exception class,
+    in your derived class.  But practically, you will require some amount of customizing as
+    per your programming needs.</p><br>
 
-    <p>•The <b>throw</b> statement allows you to create a custom error.</p><br>
+    ]]></string>
 
-    <b>Types of Java Exceptions</b> <br>
+    <string name="midtermtwo_assertions"><![CDATA[<p>•An assertion is a statement in Java which ensures the correctness of any assumptions
+    which have been done in the program. When an assertion is executed, it is assumed to
+    be true. If the assertion is false, the JVM will throw an Assertion error. It finds it
+    application primarily in the testing purposes. Assertion statements are used along with
+    boolean expressions.</p><br>
 
-    <p>There are mainly two types of exceptions: checked and unchecked. Here, an error is considered
-    as the unchecked exception. According to Oracle, there are three types of exceptions: </p> <br>
+    <p>•Assertions in Java can be done with the help of the assert keyword. There are two ways
+    in which an assert statement can be used.</p><br>
 
-    <p>1. Checked Exception <br>
+    <b>Advantage of Assertion</b> <br>
+    <p>- It provides an effective way to detect and correct programming errors.</p> <br>
 
-    •The classes which directly inherit Throwable class except RuntimeException and
-    Error are known as checked exceptions. Checked exceptions are checked at compile-
-    time. <br>
+    <b>Syntax of using Assertion:</b> <br>
+    <p>There are two ways to use assertion. <br>
+    1. assert expression; <br>
+    2. assert expression1 : expression2;
+    </p>
 
-    2. Unchecked Exception <br>
+    ]]></string>
 
-    •The classes which inherit RuntimeException are known as unchecked exceptions.
-    Unchecked exceptions are not checked at compile-time, but they are checked at
-    runtime. <br>
+    <string name="midtermone"><![CDATA[<p>When an escape sequence is encountered in a print statement, the compiler interprets it accordingly. For
+    example, if you want to put quotes within quotes you must use the escape sequence, \&quot;, on the interior
+    quotes. To print the sentence.</p><br>
 
-    2. Error <br>
+    &emsp She said &quot;Hello!&quot; to me.<br>
+    you would write <br>
+    &emsp System.out.println(&quot;She said \&quot;Hello!\&quot; to me.&quot;);<br><br>
 
-    •Error is irrecoverable <br>
 
+    <p>
+    Java provides three classes to represent a sequence of characters: <b>String, StringBuffer </b>, and
+    <b>StringBuilder</b>. The String class is an immutable class whereas StringBuffer and StringBuilder classes are
+    mutable. There are many differences between StringBuffer and StringBuilder. The StringBuilder class is
+    introduced since JDK (Java Development Kit) 1.5. <br> <br>
+
+    <b>String</b> is basically an object that represents sequence of char values. String works the same as n array of
+    characters. For example: <br> <br>
+
+    &emsp char[] ch = {&#39;j&#39;,&#39;a&#39;,&#39;v&#39;,&#39;a&#39;,&#39;t&#39;,&#39;p&#39;,&#39;o&#39;,&#39;i&#39;,&#39;n&#39;,&#39;t&#39;}; <br>
+    &emsp String s = new String(ch); <br>
+
+    Is the same as:<br>
+
+    &emsp String s = &quot;javatpoint&quot;; <br> <br>
+
+    <b>String</b> class provides a lot of methods to perform operations on string such as compare(), concat(),
+    equals(), split(), length(), replace(), compareTo(), intern(), substring() etc. <br>
+    The java.lang.String class implements Serializable, Comparable and CharSequence interfaces. <br>
     </p>
 
     ]]></string>
