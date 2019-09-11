@@ -22,6 +22,16 @@ public class Lecture_Final extends AppCompatActivity {
                 openLecture();
             }
         });
+
+        finalone = (Button) findViewById(R.id.finalone);
+        finalone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Lecture_Final.this, FinalOne.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     public void openLecture() {
