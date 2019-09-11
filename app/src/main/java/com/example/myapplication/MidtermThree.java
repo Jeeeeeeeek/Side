@@ -1,0 +1,86 @@
+package com.example.myapplication;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.text.Html;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.google.android.youtube.player.YouTubeBaseActivity;
+import com.google.android.youtube.player.YouTubeInitializationResult;
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayerView;
+
+public class MidtermThree extends YouTubeBaseActivity {
+
+    TextView textContent;
+
+    YouTubePlayerView midtermYtView4;
+    Button midtermYtButton4, buttonInitializingArrays, buttonArrayofObjects, button2DandMDArrays;
+    YouTubePlayer.OnInitializedListener mOnInitializedListener;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_midterm_three);
+
+        textContent = (TextView)findViewById(R.id.textViewMidtermThree);
+        textContent.setText(Html.fromHtml(getString(R.string.midtermthree)));
+
+        midtermYtButton4 = (Button) findViewById(R.id.midtermYtButton4);
+        midtermYtView4 = (YouTubePlayerView) findViewById(R.id.midtermYtView4);
+
+        mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
+            @Override
+            public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
+                youTubePlayer.loadVideo("ZVJ7kpEMc7U");
+            }
+
+            @Override
+            public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
+
+            }
+        };
+
+        midtermYtButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                midtermYtView4.initialize(YoutubeConfig.getApiKey(), mOnInitializedListener);
+            }
+        });
+
+        buttonInitializingArrays = (Button)findViewById(R.id.buttonInitializingArrays);
+        buttonInitializingArrays.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermThree.this, MidtermThree_InitializingArrays.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        buttonArrayofObjects = (Button)findViewById(R.id.buttonArrayofObjects);
+        buttonArrayofObjects.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermThree.this, MidtermThree_ArrayofObjects.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        button2DandMDArrays = (Button)findViewById(R.id.button2DandMDArrays);
+        button2DandMDArrays.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermThree.this, MidtermThree_2DandMDArrays.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
+
+}

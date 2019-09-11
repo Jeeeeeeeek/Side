@@ -2,10 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/comprologo"
@@ -13,7 +9,11 @@
         android:roundIcon="@drawable/comprologo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MidtermTwo_Assertion"></activity>
+        <activity android:name=".MidtermThree_2DandMDArrays"></activity>
+        <activity android:name=".MidtermThree_ArrayofObjects" />
+        <activity android:name=".MidtermThree_InitializingArrays" />
+        <activity android:name=".MidtermThree" />
+        <activity android:name=".MidtermTwo_Assertion" />
         <activity android:name=".MidtermTwo_UserDefined" />
         <activity android:name=".FinalOne" />
         <activity android:name=".MidtermTwo_TryAndCatch" />
@@ -55,5 +55,9 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>

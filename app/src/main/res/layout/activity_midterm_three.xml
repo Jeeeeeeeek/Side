@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffff"
-    tools:context=".MidtermTwo_Assertion">
+    android:background="#fff"
+    tools:context=".MidtermThree">
 
     <TextView
         android:id="@+id/textView7"
@@ -16,7 +16,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Assertions"
+        android:text="ARRAYS AND ARRAYLIST"
         android:textColor="#000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ASSERTIONS"
+                        android:text="Array and arraylist definition"
                         android:textColor="#000"
                         android:textSize="24sp"
                         android:textStyle="bold"
@@ -79,7 +79,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/textViewAssertion"
+                        android:id="@+id/textViewMidtermThree"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
@@ -102,13 +102,11 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="4dp"
                         android:layout_marginRight="4dp"
-                        android:layout_marginBottom="8dp"
                         app:cardBackgroundColor="#FFFF"
                         app:cardCornerRadius="8dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textViewAssertion">
+                        app:layout_constraintTop_toBottomOf="@+id/textViewMidtermThree">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -135,7 +133,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
                                 android:padding="10dp"
-                                android:text="Introduction to Assertion Syntax"
+                                android:text="Array vs ArrayList Difference"
                                 android:textColor="#000"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/midtermYtButton4"
@@ -154,6 +152,41 @@
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                     </androidx.cardview.widget.CardView>
+
+                    <Button
+                        android:id="@+id/buttonInitializingArrays"
+                        android:layout_width="300dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_button_yellow"
+                        android:text="DECLARING AND INITIALIZING ARRAYS"
+                        android:textColor="#000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/midtermcardView4" />
+
+                    <Button
+                        android:id="@+id/buttonArrayofObjects"
+                        android:layout_width="300dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/round_button_yellow"
+                        android:text="ARRAY OF OBJECTS"
+                        android:textColor="#000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/buttonInitializingArrays" />
+
+                    <Button
+                        android:id="@+id/button2DandMDArrays"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/round_button_yellow"
+                        android:text="TWO-DIMENSIONAL AND MULTIDIMENSIONAL ARRAYS"
+                        android:textColor="#000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/buttonArrayofObjects" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

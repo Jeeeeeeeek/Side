@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffff"
-    tools:context=".MidtermTwo_Assertion">
+    android:background="#fff"
+    tools:context=".MidtermThree_ArrayofObjects">
 
     <TextView
         android:id="@+id/textView7"
@@ -16,7 +16,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Assertions"
+        android:text="ARRAYS AND ARRAYLIST"
         android:textColor="#000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,13 +71,13 @@
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ASSERTIONS"
+                        android:text="ARRAY OF OBJECTS"
                         android:textColor="#000"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
-
+                    An array of objects is created just like an array of primitive type data items.
                     <TextView
                         android:id="@+id/textViewAssertion"
                         android:layout_width="0dp"
@@ -88,6 +88,7 @@
                         android:layout_marginEnd="4dp"
                         android:layout_marginRight="4dp"
                         android:textColor="#000"
+                        android:text="An array of objects is created just like an array of primitive type data items."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
@@ -135,7 +136,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
                                 android:padding="10dp"
-                                android:text="Introduction to Assertion Syntax"
+                                android:text="Array of Objects in Java"
                                 android:textColor="#000"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/midtermYtButton4"

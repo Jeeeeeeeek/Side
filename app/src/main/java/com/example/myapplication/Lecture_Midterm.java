@@ -43,6 +43,16 @@ public class Lecture_Midterm extends AppCompatActivity {
                 finish();
             }
         });
+
+        midtermthree = (Button) findViewById(R.id.midtermthree);
+        midtermthree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Lecture_Midterm.this, MidtermThree.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     public void openLecture() {
