@@ -2,7 +2,6 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +15,7 @@ public class Lecture_Midterm extends AppCompatActivity implements AdapterView.On
     Button btnMidtermBack,midtermone,midtermtwo,midtermthree,midtermfour;
     Spinner spinnerMidtermTwo;
     Spinner spinnerMidtermThree;
+    Spinner spinnerMidtermFour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,6 @@ public class Lecture_Midterm extends AppCompatActivity implements AdapterView.On
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMidtermTwo.setAdapter(adapter);
         spinnerMidtermTwo.setOnItemSelectedListener(this);
-
 
 
         btnMidtermBack = (Button) findViewById(R.id.btnMidtermBack);
@@ -119,6 +118,51 @@ public class Lecture_Midterm extends AppCompatActivity implements AdapterView.On
             }
         });
 
+
+        spinnerMidtermFour = (Spinner) findViewById(R.id.spinnerMidtermFour);
+        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,
+                R.array.MidtermFourLessons, R.layout.spinner_item);
+        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerMidtermFour.setAdapter(adapter3);
+        spinnerMidtermFour.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int pos, long l) {
+                midtermfour.setText(parent.getItemAtPosition(pos).toString());
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+        midtermfour = (Button) findViewById(R.id.midtermfour);
+        midtermfour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(midtermfour.getText().equals("Inheritance and Interface")){
+                    Intent intent = new Intent(Lecture_Midterm.this, MidtermFourInheritanceAndInterface.class);
+                    startActivity(intent);
+                    finish();
+                }else if(midtermfour.getText().equals("Method Overriding")){
+                    Intent intent = new Intent(Lecture_Midterm.this, MidtermFourMethodOverriding.class);
+                    startActivity(intent);
+                    finish();
+                }else if(midtermfour.getText().equals("Constructors During Inheritance")){
+                    Intent intent = new Intent(Lecture_Midterm.this, MidtermFourConstructorsDuringInheritance.class);
+                    startActivity(intent);
+                    finish();
+                }else if(midtermfour.getText().equals("Superclass Method")){
+                    Intent intent = new Intent(Lecture_Midterm.this, MidtermFourSuperclassMethod.class);
+                    startActivity(intent);
+                    finish();
+                }else if(midtermfour.getText().equals("Information Hiding")){
+                    Intent intent = new Intent(Lecture_Midterm.this, MidtermFourInformationHiding.class);
+                    startActivity(intent);
+                    finish();
+                }
+            }
+        });
 
     }
 

@@ -171,6 +171,60 @@
 
     ]]></string>
 
+    <string name="MidtermFourInterface"><![CDATA[
+    <b>Interface</b> <br>
+    • An interface is a reference type, similar to a class, that can contain only constants,
+    method signatures, default methods, static methods, and nested types. Method bodies
+    exist only for default methods and static methods. <br>
+    • It should be noted that interfaces cannot be instantiated as they can only
+    be implemented by classes or extended by other interfaces. This is the basic difference
+    between interfaces and classes. Also note that the method signatures in an interface
+    have no braces and are terminated with a semicolon, which is not the case in a class
+    method definition. <br.
+    • Interfaces are used for abstraction. Since methods in interfaces does not have body,
+    they have to be implemented by the class before you can access them. The class that
+    implements interface must implement all the methods of that interface. <br>
+
+    ]]></string>
+
+    <string name="MidtermFourInheritancee"><![CDATA[
+    <b>Inheritance</b> <br>
+    • Inheritance is the process wherein characteristics are inherited from ancestors.
+    Inheritance in java can be defined as a mechanism where a new class is derived from an
+    existing class. It is possible for classes to inherit or acquire the properties and methods
+    of other classes, just like a son can acquire some traits and behaviour from his father. <br>
+    • The inheritance mechanism is very useful in code reuse. Classes can be derived from
+    classes that are derived from classes that are derived from classes, and so on. In java, by
+    default, the Object class is the parent class. <br.
+    • Inheritance is declared using the extends keyword. You declare that one
+    class extends another class by using the extends keyword in the class definition. <br>
+    • For example, mammals is a super-class while human beings and animals are
+    subclasses. Animals inherit all of the mammals’ properties. Subsequently, dogs can
+    inherit all animals’ properties making it a subclass of the animals. <br>
+
+    ]]></string>
+
+    <string name="MidtermFourMethodOverriding"><![CDATA[
+    • Declaring a method in sub class which is already present in parent class is known as
+    method overriding. Overriding is done so that a child class can give its own
+    implementation to a method which is already provided by the parent class. In this case
+    the method in parent class is called overridden method and the method in child class is
+    called overriding method. <br>
+    • In Java, a child class has the same method as of base class. In such cases child class
+    overrides the parent class method without even touching the source code of the base
+    class. <br>
+
+    ]]></string>
+
+    <string name="MidtermFourSuperclassMethod"><![CDATA[
+    • In Java, it is possible to inherit attributes and methods from one class to another. We
+    group the &quot;inheritance concept&quot; into two categories: <br>
+    &emsp • subclass (child) - the class that inherits from another class
+    &emsp • superclass (parent) - the class being inherited from
+    &emsp&emsp • To inherit from a class, use the extends keyword.
+
+    ]]></string>
+
     <string-array name="MidtermTwoLessons">
         <item>Exception Handling</item>
         <item>Try and Catch</item>
