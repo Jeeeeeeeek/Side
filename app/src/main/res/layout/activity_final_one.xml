@@ -113,7 +113,7 @@
                         android:layout_marginRight="7dp"
                         android:background="#ececec"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintHorizontal_bias="0.636"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
@@ -235,7 +235,7 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginEnd="4dp"
                         android:layout_marginRight="4dp"
-                        android:text="First, you need to import Scanner class using:"
+                        android:text="  First, you need to import Scanner class using:"
                         android:textColor="#000"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="1.0"
@@ -380,8 +380,8 @@
 
                     <TextView
                         android:id="@+id/textView22"
-                        android:layout_width="351dp"
-                        android:layout_height="375dp"
+                        android:layout_width="349dp"
+                        android:layout_height="373dp"
                         android:layout_marginStart="3dp"
                         android:layout_marginLeft="3dp"
                         android:layout_marginTop="10dp"
@@ -463,8 +463,10 @@
                         android:id="@+id/imageView2"
                         android:layout_width="355dp"
                         android:layout_height="108dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginRight="2dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView27"
@@ -560,6 +562,44 @@
                         app:layout_constraintTop_toBottomOf="@+id/textView31"
                         app:srcCompat="@drawable/output2final" />
 
+                    <Button
+                        android:id="@+id/finalYTButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/round_button_yellow"
+                        android:text="PLAY"
+                        android:textColor="#000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/finalYTView1" />
+
+                    <TextView
+                        android:id="@+id/finalVideoTitle1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="10dp"
+                        android:text="TITLE"
+                        android:textColor="#000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/finalYTView1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/finalYTView1" />
+
+                    <view
+                        android:id="@+id/finalYTView1"
+                        class="com.google.android.youtube.player.YouTubePlayerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp"
+                        android:layout_marginTop="100dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/imageView5" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
