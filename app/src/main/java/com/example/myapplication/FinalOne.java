@@ -22,6 +22,7 @@ public class FinalOne extends YouTubeBaseActivity {
     YouTubePlayerView finalYTView1;
     Button finalYTButton1;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
+    ImageView imgView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,14 @@ public class FinalOne extends YouTubeBaseActivity {
         Drawable drawable  = getResources().getDrawable(R.drawable.example1final);
         imgView.setImageDrawable(drawable);
 
+        ImageView iv = (ImageView)findViewById(R.id.imageView3);
+        iv.setImageResource(R.drawable.output1final);
 
+        ImageView iv1 = (ImageView)findViewById(R.id.imageView4);
+        iv1.setImageResource(R.drawable.example2finaal);
+
+        ImageView iv2 = (ImageView)findViewById(R.id.imageView5);
+        iv2.setImageResource(R.drawable.output2final);
 
         finalYTButton1 = (Button) findViewById(R.id.finalYTButton1);
         finalYTView1 = (YouTubePlayerView) findViewById(R.id.finalYTView1);
