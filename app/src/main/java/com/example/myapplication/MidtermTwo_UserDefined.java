@@ -1,7 +1,5 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -12,9 +10,6 @@ import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MidtermTwo_UserDefined extends YouTubeBaseActivity {
 
@@ -32,8 +27,8 @@ public class MidtermTwo_UserDefined extends YouTubeBaseActivity {
         textViewUserDefined = (TextView)findViewById(R.id.textViewUserDefined);
         textViewUserDefined.setText(Html.fromHtml(getString(R.string.midtermtwo_userdefinedexception)));
 
-        midtermYtButton3 = (Button) findViewById(R.id.midtermYtButton3);
-        midtermYtView3 = (YouTubePlayerView) findViewById(R.id.midtermYtView3);
+        midtermYtButton3 = (Button) findViewById(R.id.final1BYtButton3);
+        midtermYtView3 = (YouTubePlayerView) findViewById(R.id.final1BYtView3);
 
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
             @Override

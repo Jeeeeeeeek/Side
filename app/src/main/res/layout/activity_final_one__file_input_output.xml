@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".MidtermOne">
+    android:background="#ffff"
+    tools:context=".FinalOne_FileInputOutput">
 
     <TextView
         android:id="@+id/textView7"
@@ -16,7 +16,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="EXCEPTION HANDLING"
+        android:text="FILE INPUT/OUTPUT"
         android:textColor="#000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,12 +36,12 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="300dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="366dp"
+                android:layout_height="526dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginEnd="16dp"
@@ -67,46 +67,19 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp">
 
-                    <ImageView
-                        android:id="@+id/ImageViewfinalA1"
-                        android:layout_width="0dp"
-                        android:layout_height="400dp"
-                        android:scaleType="fitXY"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textViewfinalA1"
-                        app:srcCompat="@drawable/midtermoneimg" />
-
                     <TextView
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="EXCEPTION HANDLING"
+                        android:text="FILE INPUT/OUTPUT"
                         android:textColor="#000"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
-                        android:id="@+id/textViewfinalA1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="4dp"
-                        android:layout_marginRight="4dp"
-                        android:textColor="#000"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView8"
-                        app:layout_constraintVertical_bias="0.0" />
-
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/finalAcardView1"
+                        android:id="@+id/final1BcardView3"
                         android:layout_width="0dp"
                         android:layout_height="300dp"
                         android:layout_marginStart="4dp"
@@ -114,18 +87,20 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="4dp"
                         android:layout_marginRight="4dp"
+                        android:layout_marginBottom="8dp"
                         app:cardBackgroundColor="#FFFF"
                         app:cardCornerRadius="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/ImageViewfinalA1">
+                        app:layout_constraintTop_toBottomOf="@+id/textView8">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="match_parent">
 
                             <Button
-                                android:id="@+id/midtermYtButton1"
+                                android:id="@+id/final1BYtButton3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="4dp"
@@ -137,23 +112,23 @@
                                 android:textColor="#000"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/midtermYtView1" />
+                                app:layout_constraintTop_toBottomOf="@+id/final1BYtView3" />
 
                             <TextView
-                                android:id="@+id/finalAVideoTitle1"
+                                android:id="@+id/final1BVideoTitle3"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
                                 android:padding="10dp"
-                                android:text="Exception Handling in Java"
+                                android:text="Learn Programming in Java: File Input/Output"
                                 android:textColor="#000"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/midtermYtButton1"
+                                app:layout_constraintEnd_toStartOf="@+id/final1BYtButton3"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/midtermYtView1" />
+                                app:layout_constraintTop_toBottomOf="@+id/final1BYtView3" />
 
                             <view
-                                android:id="@+id/midtermYtView1"
+                                android:id="@+id/final1BYtView3"
                                 class="com.google.android.youtube.player.YouTubePlayerView"
                                 android:layout_width="match_parent"
                                 android:layout_height="260dp"
@@ -172,6 +147,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

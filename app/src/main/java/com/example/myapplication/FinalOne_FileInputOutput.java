@@ -1,39 +1,38 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
+public class FinalOne_FileInputOutput extends AppCompatActivity {
 
-public class MidtermTwo_Assertion extends YouTubeBaseActivity {
 
-    TextView textViewAssertion;
-    YouTubePlayerView midtermYtView4;
-    Button midtermYtButton4;
+
+    YouTubePlayerView final1BYtView3;
+    Button final1BYtButton3;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_midterm_two__assertion);
+        setContentView(R.layout.activity_final_one__file_input_output);
 
-        textViewAssertion = (TextView)findViewById(R.id.textViewAssertion);
-        textViewAssertion.setText(Html.fromHtml(getString(R.string.midtermtwo_assertions)));
 
-        midtermYtButton4 = (Button) findViewById(R.id.midtermYtButton4);
-        midtermYtView4 = (YouTubePlayerView) findViewById(R.id.midtermYtView4);
+        final1BYtButton3 = (Button) findViewById(R.id.final1BYtButton3);
+        final1BYtView3 = (YouTubePlayerView) findViewById(R.id.final1BYtView3);
 
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("RQ0bZRPYDFE");//
+                youTubePlayer.loadVideo("_jhCvy8_lGE");
             }
 
             @Override
@@ -42,12 +41,12 @@ public class MidtermTwo_Assertion extends YouTubeBaseActivity {
             }
         };
 
-        midtermYtButton4.setOnClickListener(new View.OnClickListener() {
+        final1BYtButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                midtermYtView4.initialize(YoutubeConfig.getApiKey(), mOnInitializedListener);
+                final1BYtView3.initialize(YoutubeConfig.getApiKey(), mOnInitializedListener);
             }
         });
-
     }
 }
+

@@ -225,6 +225,63 @@
 
     ]]></string>
 
+    <string name="FinalOneInputOutputStream"><![CDATA[
+    • Streams are used to handle input/output operations. <br>
+    • Stream is like a pipe which carries data from one end to the other. The end points are
+    nothing but the source and destination of the data to be read/written. <br> <br>
+
+    Streams are classified into two types, which are the parent class of all the subclasses of other
+    streams. <br> <br>
+
+    • <b>InputStream</b> – Superclass of all classes used to read the input. <br>
+    • <b>OutputStream</b> – Superclass of all classes used to write the output. <br>
+
+    <b>There are 3 fields in System class which represents some stream.</b>
+    1. in – Represents the standard input device <br>
+    2. out – Represents the standard output device <br>
+    3. err – same as System.out (Errors are displayed using this field.) <br>
+    <br>
+
+    •  System.in field represents the InputStream object. Both System.out and System.err fields
+    represents the PrintStream object.
+    •  To accept the data from the input device, we need to connect the System.in (representing the
+    basic input device) to an input stream. <br>
+    <br>
+    Example:  <br>
+
+
+    ]]></string>
+
+
+    <string name="FinalOneBytestreams"><![CDATA[
+    • <b>Byte Streams</b> – ASCII 8 bits (each character requires 1 byte) <br>
+    • <b>Character Streams</b> – Unicode 16 bits (each character requires 2 byte) <br>
+    <br>
+        <<b>BYTESTREAMS:</b>
+    • Byte streams are used to read/write input/output of 8 bit bytes.All kind of data
+    (text,image,audio,video) can be read/written using byte streams. <br>
+    <br>
+    The following diagrams shows some of the subclasses of InputStream and Output Streams which
+    falls under the category of byte streams.
+    Example:  <br>
+    ]]></string>
+
+    <string name="FinalOneSubclass"><![CDATA[
+    • <b>9 Subclasses of InputStream defined under the JAVA SE8</b> <br>
+
+            > AudioInputStream <br>
+            > ByteArrayInputStream <br>
+            > FileInputStream <br>
+            > FilterInputStream <br>
+            > InputStream <br>
+            > ObjectInputStream <br>
+            > PipedInputStream <br>
+            > SequenceInputStream<br>
+            > StringBufferInputStream <br>
+        <br>
+    ]]></string>
+
+
     <string-array name="MidtermTwoLessons">
         <item>Exception Handling</item>
         <item>Try and Catch</item>

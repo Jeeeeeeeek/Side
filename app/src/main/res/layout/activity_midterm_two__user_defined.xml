@@ -96,7 +96,7 @@
                         app:layout_constraintVertical_bias="0.0" />
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/midtermcardView3"
+                        android:id="@+id/final1BcardView3"
                         android:layout_width="0dp"
                         android:layout_height="300dp"
                         android:layout_marginStart="4dp"
@@ -117,7 +117,7 @@
                             android:layout_height="match_parent">
 
                             <Button
-                                android:id="@+id/midtermYtButton3"
+                                android:id="@+id/final1BYtButton3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="4dp"
@@ -129,10 +129,10 @@
                                 android:textColor="#000"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/midtermYtView3" />
+                                app:layout_constraintTop_toBottomOf="@+id/final1BYtView3" />
 
                             <TextView
-                                android:id="@+id/midtermVideoTitle3"
+                                android:id="@+id/final1BVideoTitle3"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
@@ -140,12 +140,12 @@
                                 android:text="User defined exception"
                                 android:textColor="#000"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/midtermYtButton3"
+                                app:layout_constraintEnd_toStartOf="@+id/final1BYtButton3"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/midtermYtView3" />
+                                app:layout_constraintTop_toBottomOf="@+id/final1BYtView3" />
 
                             <view
-                                android:id="@+id/midtermYtView3"
+                                android:id="@+id/final1BYtView3"
                                 class="com.google.android.youtube.player.YouTubePlayerView"
                                 android:layout_width="match_parent"
                                 android:layout_height="260dp"

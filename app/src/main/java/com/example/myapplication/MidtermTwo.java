@@ -1,16 +1,8 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.ActionBar;
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
-import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -19,9 +11,6 @@ import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MidtermTwo extends YouTubeBaseActivity {
 
@@ -63,11 +52,11 @@ public class MidtermTwo extends YouTubeBaseActivity {
             }
         });
 
-        textView9 = (TextView)findViewById(R.id.textView9);
+        textView9 = (TextView)findViewById(R.id.textViewfinalA1);
         textView9.setText(Html.fromHtml(getString(R.string.midtermtwo)));
 
 
-        ImageViewMidtermone = (ImageView) findViewById(R.id.ImageViewMidtermone);
+        ImageViewMidtermone = (ImageView) findViewById(R.id.ImageViewfinalA1);
         ImageViewMidtermone.setImageResource(R.drawable.midtermoneimg);
     }
 

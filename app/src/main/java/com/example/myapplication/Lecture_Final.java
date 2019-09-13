@@ -32,6 +32,26 @@ public class Lecture_Final extends AppCompatActivity {
                 finish();
             }
         });
+
+        finaltwo = (Button) findViewById(R.id.finaltwo);
+        finaltwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Lecture_Final.this, FinalOne.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        finalthree = (Button) findViewById(R.id.finalthree);
+        finalthree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Lecture_Final.this, FinalOne.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     public void openLecture() {
