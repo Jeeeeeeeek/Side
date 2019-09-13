@@ -21,9 +21,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Button;
 
 public class AssessmentTask extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    Button quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,16 @@ public class AssessmentTask extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        quiz = (Button) findViewById(R.id.quiz);
+        quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AssessmentTask.this, PrelimQuiz.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     @Override
