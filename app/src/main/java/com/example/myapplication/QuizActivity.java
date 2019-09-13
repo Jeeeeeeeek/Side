@@ -95,20 +95,29 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void updateQuestion(){
-        mQuestionView.setText(mQuestionLibrary.getQuestion(mQuestionNumber));
-        mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
-        mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
-        mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
-
-        mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
-
         QuestionLibrary questions = new QuestionLibrary();
-        if(questions.getQuestionSize() > mQuestionNumber){
+        if(mQuestionNumber < questions.getQuestionSize() ){
+            mQuestionView.setText(mQuestionLibrary.getQuestion(mQuestionNumber));
+            mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
+            mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
+            mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
+
+            mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
+
             mQuestionNumber++;
+
         }else{
             new AlertDialog.Builder(QuizActivity.this)
                     .setTitle("Done!")
                     .setMessage("Congratulations for taking the quiz, your score is " + mScore)
+                    .setCancelable(false)
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            Intent intent = new Intent(QuizActivity.this, PrelimQuiz.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                    })
                     .show();
         }
 
