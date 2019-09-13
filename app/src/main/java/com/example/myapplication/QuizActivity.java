@@ -103,7 +103,7 @@ public class QuizActivity extends AppCompatActivity {
         mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
 
         QuestionLibrary questions = new QuestionLibrary();
-        if(questions.getQuestionSize() < mQuestionNumber){
+        if(questions.getQuestionSize() > mQuestionNumber){
             mQuestionNumber++;
         }else{
             new AlertDialog.Builder(QuizActivity.this)
