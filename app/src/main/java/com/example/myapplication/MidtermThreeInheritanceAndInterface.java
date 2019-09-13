@@ -3,19 +3,17 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-public class MidtermThree_2DandMDArrays extends YouTubeBaseActivity {
+public class MidtermThreeInheritanceAndInterface extends AppCompatActivity {
 
-    TextView textViewAssertion3;
+    TextView textViewAssertion,textViewAssertion2;
 
     YouTubePlayerView midtermYtView4;
     Button midtermYtButton4;
@@ -25,14 +23,10 @@ public class MidtermThree_2DandMDArrays extends YouTubeBaseActivity {
     Button midtermYtButton5;
     YouTubePlayer.OnInitializedListener mOnInitializedListener2;
 
-    YouTubePlayerView midtermYtView6;
-    Button midtermYtButton6;
-    YouTubePlayer.OnInitializedListener mOnInitializedListener3;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_midterm_three_2_dand_mdarrays);
+        setContentView(R.layout.activity_midterm_three_inheritance_and_interface);
 
         midtermYtButton4 = (Button) findViewById(R.id.midtermYtButton4);
         midtermYtView4 = (YouTubePlayerView) findViewById(R.id.midtermYtView4);
@@ -40,7 +34,7 @@ public class MidtermThree_2DandMDArrays extends YouTubeBaseActivity {
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("udHgmxK9oAI");
+                youTubePlayer.loadVideo("Ggjxn8Q9VuE");
             }
 
             @Override
@@ -63,7 +57,7 @@ public class MidtermThree_2DandMDArrays extends YouTubeBaseActivity {
         mOnInitializedListener2 = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("d8x5Nciymjs");
+                youTubePlayer.loadVideo("361J5nra5PU");
             }
 
             @Override
@@ -72,42 +66,6 @@ public class MidtermThree_2DandMDArrays extends YouTubeBaseActivity {
 
             }
         };
-
-        midtermYtButton5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                midtermYtView5.initialize(YoutubeConfig.getApiKey(), mOnInitializedListener2);
-            }
-        });
-
-        textViewAssertion3 = (TextView)findViewById(R.id.textViewAssertion3);
-        textViewAssertion3.setText(Html.fromHtml(getString(R.string.midtermthree2DandMDArray)));
-
-        midtermYtButton6 = (Button) findViewById(R.id.midtermYtButton6);
-        midtermYtView6 = (YouTubePlayerView) findViewById(R.id.midtermYtView6);
-
-        mOnInitializedListener3 = new YouTubePlayer.OnInitializedListener() {
-            @Override
-            public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("VE0HeWFaAIQ");
-            }
-
-            @Override
-            public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult
-                    youTubeInitializationResult) {
-
-            }
-        };
-
-        midtermYtButton6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                midtermYtView6.initialize(YoutubeConfig.getApiKey(), mOnInitializedListener3);
-            }
-        });
 
     }
-
-
 }
-

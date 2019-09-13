@@ -52,35 +52,7 @@ public class MidtermThree extends YouTubeBaseActivity {
             }
         });
 
-        buttonInitializingArrays = (Button)findViewById(R.id.buttonInitializingArrays);
-        buttonInitializingArrays.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MidtermThree.this, MidtermThree_InitializingArrays.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
-        buttonArrayofObjects = (Button)findViewById(R.id.buttonArrayofObjects);
-        buttonArrayofObjects.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MidtermThree.this, MidtermThree_ArrayofObjects.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        button2DandMDArrays = (Button)findViewById(R.id.button2DandMDArrays);
-        button2DandMDArrays.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MidtermThree.this, MidtermThree_2DandMDArrays.class);
-                startActivity(intent);
-                finish();
-            }
-        });
     }
 
 }

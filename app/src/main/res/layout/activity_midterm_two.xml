@@ -165,41 +165,6 @@
 
                     </androidx.cardview.widget.CardView>
 
-                    <Button
-                        android:id="@+id/assertionsButton"
-                        android:layout_width="200dp"
-                        android:layout_height="35dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:background="@drawable/round_button_yellow"
-                        android:text="ASSERTIONS"
-                        android:textColor="#000"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/userdefineButton" />
-
-                    <Button
-                        android:id="@+id/tryandcatchButton"
-                        android:layout_width="200dp"
-                        android:layout_height="35dp"
-                        android:layout_marginTop="24dp"
-                        android:background="@drawable/round_button_yellow"
-                        android:text="Try and catch"
-                        android:textColor="#000"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/midtermcardView1" />
-
-                    <Button
-                        android:id="@+id/userdefineButton"
-                        android:layout_width="200dp"
-                        android:layout_height="35dp"
-                        android:layout_marginTop="8dp"
-                        android:background="@drawable/round_button_yellow"
-                        android:text="USER-DEFINED EXCEPTIONS"
-                        android:textColor="#000"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tryandcatchButton" />
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>

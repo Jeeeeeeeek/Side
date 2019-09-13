@@ -66,36 +66,6 @@ public class MidtermTwo extends YouTubeBaseActivity {
         textView9 = (TextView)findViewById(R.id.textView9);
         textView9.setText(Html.fromHtml(getString(R.string.midtermtwo)));
 
-        tryandcatchButton = (Button)findViewById(R.id.tryandcatchButton);
-        tryandcatchButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MidtermTwo.this, MidtermTwo_TryAndCatch.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        userdefineButton = (Button)findViewById(R.id.userdefineButton);
-        userdefineButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MidtermTwo.this, MidtermTwo_UserDefined.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
-        assertionsButton = (Button)findViewById(R.id.assertionsButton);
-        assertionsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MidtermTwo.this, MidtermTwo_Assertion.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
 
         ImageViewMidtermone = (ImageView) findViewById(R.id.ImageViewMidtermone);
         ImageViewMidtermone.setImageResource(R.drawable.midtermoneimg);

@@ -158,5 +158,40 @@
 
     ]]></string>
 
+    <string name="midtermthree2DandMDArray"><![CDATA[<p>Java ArrayList class uses a dynamic array for storing the elements. It inherits AbstractList class
+    and implements List interface. </p> <br>
+
+    The important points about Java ArrayList class are: <br>
+    • Java ArrayList class can contain duplicate elements. <br>
+    • Java ArrayList class maintains insertion order. <br.
+    • Java ArrayList class is non synchronized. <br>
+    • Java ArrayList allows random access because array works at the index basis. <br>
+    • In Java ArrayList class, manipulation is slow because a lot of shifting needs to occur
+    if any element is removed from the array list. <br>
+
+    ]]></string>
+
+    <string-array name="MidtermTwoLessons">
+        <item>Exception Handling</item>
+        <item>Try and Catch</item>
+        <item>User Defined Exceptions</item>
+        <item>Assertions</item>
+    </string-array>
+
+    <string-array name="MidtermThreeLessons">
+        <item>Arrays and Array List</item>
+        <item>Declaring and Initializing Arrays</item>
+        <item>Array of Objects</item>
+        <item>2D and Multidimentional Array</item>
+    </string-array>
+
+    <string-array name="MidtermFourLessons">
+        <item>Inheritance and Interface</item>
+        <item>Method Overriding</item>
+        <item>Constructors During Inheritance</item>
+        <item>Superclass Method</item>
+        <item>Information Hiding</item>
+    </string-array>
+
 
 </resources>

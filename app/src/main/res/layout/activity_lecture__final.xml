@@ -37,33 +37,36 @@
             android:text="Final Period"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
         <Button
             android:id="@+id/finalone"
-            android:text="Basic Input / Output"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
-            android:background="@drawable/roundb"
-            android:textColor="#000"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/roundb_forspinner"
+            android:text="Basic Input / Output"
+            android:textColor="#000" />
+
         <Button
-            android:text="Swing"
             android:id="@+id/finaltwo"
-            android:layout_marginTop="15dp"
-            android:textColor="#000"
-            android:background="@drawable/roundb"
-            android:layout_gravity="center_horizontal"
             android:layout_width="250dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundb_forspinner"
+            android:text="Swing"
+            android:textColor="#000" />
+
         <Button
-            android:text="Applets"
             android:id="@+id/finalthree"
-            android:layout_marginTop="15dp"
-            android:textColor="#000"
-            android:background="@drawable/roundb"
-            android:layout_gravity="center_horizontal"
             android:layout_width="250dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundb_forspinner"
+            android:text="Applets"
+            android:textColor="#000" />
 
 
 

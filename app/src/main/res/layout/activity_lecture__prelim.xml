@@ -33,51 +33,56 @@
             android:text="Preliminary Period"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
         <Button
             android:id="@+id/prelimone"
-            android:text="Introduction"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
-            android:background="@drawable/roundb"
-            android:textColor="#000"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/roundb_forspinner"
+            android:text="Introduction"
+            android:textColor="#000" />
+
         <Button
-            android:text="Objective-Oriented Programming Concepts and Principle"
             android:id="@+id/prelimtwo"
-            android:layout_marginTop="15dp"
-            android:textColor="#000"
-            android:background="@drawable/roundb"
-            android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundb_forspinner"
+            android:text="Objective-Oriented Programming Concepts and Principle"
+            android:textColor="#000" />
+
         <Button
-            android:text="Java Technology"
             android:id="@+id/prelimthree"
-            android:layout_marginTop="15dp"
-            android:textColor="#000"
-            android:background="@drawable/roundb"
-            android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundb_forspinner"
+            android:text="Java Technology"
+            android:textColor="#000" />
+
         <Button
-            android:text="Java Programming Fundamentals"
             android:id="@+id/prelimfour"
-            android:layout_marginTop="15dp"
-            android:textColor="#000"
-            android:background="@drawable/roundb"
-            android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundb_forspinner"
+            android:text="Java Programming Fundamentals"
+            android:textColor="#000" />
+
         <Button
-            android:text="Class, Objectives, Data Types, and Operation"
             android:id="@+id/prelimfive"
-            android:layout_marginTop="15dp"
-            android:textColor="#000"
-            android:background="@drawable/roundb"
-            android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundb_forspinner"
+            android:text="Class, Objectives, Data Types, and Operation"
+            android:textColor="#000" />
 
 
 

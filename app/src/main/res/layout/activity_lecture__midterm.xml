@@ -20,60 +20,124 @@
 
 
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="100dp"
+            android:text="Midterm Period"
             android:textColor="#000"
             android:textSize="30dp"
-            android:typeface="serif"
             android:textStyle="bold"
-            android:text="Midterm Period"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <Button
             android:id="@+id/midtermone"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/roundb_forspinner"
             android:text="Characters, String, and StringBuilder"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/roundb"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="250dp"
             android:textColor="#000"
-            android:layout_height="wrap_content" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <Spinner
+            android:id="@+id/spinnerMidtermTwo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/roundb_forspinner"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@+id/midtermtwo"
+            app:layout_constraintEnd_toEndOf="@+id/midtermone"
+            app:layout_constraintStart_toStartOf="@+id/midtermtwo"
+            app:layout_constraintTop_toTopOf="@+id/midtermtwo" />
+
         <Button
-            android:text="Exception Handling"
             android:id="@+id/midtermtwo"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/roundb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_width="250dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/roundb"
+            android:text="Exception Handling"
             android:textColor="#000"
-            android:layout_height="wrap_content" />
+            app:layout_constraintEnd_toEndOf="@+id/midtermone"
+            app:layout_constraintHorizontal_bias="0.39"
+            app:layout_constraintStart_toStartOf="@+id/midtermone"
+            app:layout_constraintTop_toBottomOf="@+id/midtermone" />
+
+        <Spinner
+            android:id="@+id/spinnerMidtermThree"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/roundb_forspinner"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@+id/midtermthree"
+            app:layout_constraintEnd_toEndOf="@+id/midtermone"
+            app:layout_constraintStart_toStartOf="@+id/midtermtwo"
+            app:layout_constraintTop_toTopOf="@+id/midtermthree" />
+
         <Button
-            android:text="Arrays and arrayList"
             android:id="@+id/midtermthree"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/roundb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_width="250dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/roundb"
+            android:text="Arrays and arrayList"
             android:textColor="#000"
-            android:layout_height="wrap_content" />
+            app:layout_constraintEnd_toEndOf="@+id/midtermone"
+            app:layout_constraintStart_toStartOf="@+id/midtermone"
+            app:layout_constraintTop_toBottomOf="@+id/midtermtwo" />
+
+        <Spinner
+            android:id="@+id/spinnerMidtermThree2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/roundb_forspinner"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@+id/midtermfour"
+            app:layout_constraintEnd_toEndOf="@+id/midtermone"
+            app:layout_constraintStart_toStartOf="@+id/midtermtwo"
+            app:layout_constraintTop_toTopOf="@+id/midtermfour" />
+
         <Button
-            android:text="Inheritance and Interface"
             android:id="@+id/midtermfour"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/roundb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_width="250dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/roundb"
+            android:text="Inheritance and Interface"
             android:textColor="#000"
-            android:layout_height="wrap_content" />
+            app:layout_constraintEnd_toEndOf="@+id/midtermone"
+            app:layout_constraintStart_toStartOf="@+id/midtermone"
+            app:layout_constraintTop_toBottomOf="@+id/midtermthree" />
 
 
-
-
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>
