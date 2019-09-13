@@ -9,7 +9,11 @@
         android:roundIcon="@drawable/comprologo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MidtermThreeInheritanceAndInterface"></activity>
+        <activity android:name=".MidtermFourInformationHiding"></activity>
+        <activity android:name=".MidtermFourSuperclassMethod" />
+        <activity android:name=".MidtermFourConstructorsDuringInheritance" />
+        <activity android:name=".MidtermFourMethodOverriding" />
+        <activity android:name=".MidtermFourInheritanceAndInterface" />
         <activity android:name=".MidtermThree_2DandMDArrays" />
         <activity android:name=".MidtermThree_ArrayofObjects" />
         <activity android:name=".MidtermThree_InitializingArrays" />
@@ -56,9 +60,9 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
