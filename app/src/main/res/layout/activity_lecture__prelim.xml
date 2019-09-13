@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorfour"
+    android:background="@drawable/bg4"
     tools:context=".Lecture_Prelim">
 
 
@@ -38,6 +38,7 @@
             android:text="Introduction"
             android:layout_marginTop="40dp"
             android:background="@drawable/roundb"
+            android:textColor="#000"
             android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
             android:layout_height="wrap_content" />
@@ -45,6 +46,7 @@
             android:text="Objective-Oriented Programming Concepts and Principle"
             android:id="@+id/prelimtwo"
             android:layout_marginTop="15dp"
+            android:textColor="#000"
             android:background="@drawable/roundb"
             android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
@@ -53,6 +55,7 @@
             android:text="Java Technology"
             android:id="@+id/prelimthree"
             android:layout_marginTop="15dp"
+            android:textColor="#000"
             android:background="@drawable/roundb"
             android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
@@ -61,6 +64,7 @@
             android:text="Java Programming Fundamentals"
             android:id="@+id/prelimfour"
             android:layout_marginTop="15dp"
+            android:textColor="#000"
             android:background="@drawable/roundb"
             android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
@@ -69,6 +73,7 @@
             android:text="Class, Objectives, Data Types, and Operation"
             android:id="@+id/prelimfive"
             android:layout_marginTop="15dp"
+            android:textColor="#000"
             android:background="@drawable/roundb"
             android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
