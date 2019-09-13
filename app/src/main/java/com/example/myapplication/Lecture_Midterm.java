@@ -98,19 +98,19 @@ public class Lecture_Midterm extends AppCompatActivity implements AdapterView.On
         midtermthree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(midtermtwo.getText().equals("Arrays and Array List")){
+                if(midtermthree.getText().equals("Arrays and Array List")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermThree.class);
                     startActivity(intent);
                     finish();
-                }else if(midtermtwo.getText().equals("Declaring and Initializing Arrays")){
+                }else if(midtermthree.getText().equals("Declaring and Initializing Arrays")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermThree_InitializingArrays.class);
                     startActivity(intent);
                     finish();
-                }else if(midtermtwo.getText().equals("Array of Objects")){
+                }else if(midtermthree.getText().equals("Array of Objects")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermThree_ArrayofObjects.class);
                     startActivity(intent);
                     finish();
-                }else if(midtermtwo.getText().equals("2D and Multidimentional Array")){
+                }else if(midtermthree.getText().equals("2D and Multidimentional Array")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermThree_2DandMDArrays.class);
                     startActivity(intent);
                     finish();
