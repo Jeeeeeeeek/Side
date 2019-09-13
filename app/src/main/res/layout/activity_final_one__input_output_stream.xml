@@ -79,19 +79,63 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/textViewInputOutputStream"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
-                        android:layout_marginEnd="4dp"
-                        android:layout_marginRight="4dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
                         android:textColor="#000"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="339dp"
+                        android:layout_height="178dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="22dp"
+                        android:layout_marginRight="22dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewInputOutputStream"
+                        app:srcCompat="@drawable/finaloneaimage1" />
+
+                    <TextView
+                        android:id="@+id/textViewByteStreams"
+                        android:layout_width="339dp"
+                        android:layout_height="23dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="TextView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="350dp"
+                        android:layout_height="335dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewByteStreams"
+                        app:srcCompat="@drawable/finaloneaimage2" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/finalAView2"
@@ -99,7 +143,7 @@
                         android:layout_height="300dp"
                         android:layout_marginStart="4dp"
                         android:layout_marginLeft="4dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="500dp"
                         android:layout_marginEnd="4dp"
                         android:layout_marginRight="4dp"
                         android:layout_marginBottom="16dp"
@@ -108,7 +152,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView10">
+                        app:layout_constraintTop_toBottomOf="@+id/imageView6">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -130,7 +174,7 @@
                                 app:layout_constraintTop_toBottomOf="@+id/midtermYtView1" />
 
                             <TextView
-                                android:id="@+id/midtermVideoTitle2"
+                                android:id="@+id/finalVideoTitle2"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
@@ -140,10 +184,10 @@
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/midtermYtButton1"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/midtermYtView2" />
+                                app:layout_constraintTop_toBottomOf="@+id/final1AYtView2" />
 
                             <view
-                                android:id="@+id/midtermYtView2"
+                                android:id="@+id/final1AYtView2"
                                 class="com.google.android.youtube.player.YouTubePlayerView"
                                 android:layout_width="match_parent"
                                 android:layout_height="260dp"

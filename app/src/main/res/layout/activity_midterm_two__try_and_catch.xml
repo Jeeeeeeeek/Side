@@ -79,7 +79,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/textViewInputOutputStream"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
@@ -108,7 +108,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView10">
+                        app:layout_constraintTop_toBottomOf="@+id/textViewInputOutputStream">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -130,7 +130,7 @@
                                 app:layout_constraintTop_toBottomOf="@+id/midtermYtView1" />
 
                             <TextView
-                                android:id="@+id/midtermVideoTitle2"
+                                android:id="@+id/finalVideoTitle2"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
@@ -140,10 +140,10 @@
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/midtermYtButton1"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/midtermYtView2" />
+                                app:layout_constraintTop_toBottomOf="@+id/final1AYtView2" />
 
                             <view
-                                android:id="@+id/midtermYtView2"
+                                android:id="@+id/final1AYtView2"
                                 class="com.google.android.youtube.player.YouTubePlayerView"
                                 android:layout_width="match_parent"
                                 android:layout_height="260dp"

@@ -71,7 +71,7 @@
                         android:layout_height="0dp"
                         android:background="#ececec"
                         app:layout_constraintBottom_toTopOf="@+id/textView14"
-                        app:layout_constraintTop_toTopOf="@+id/textView10"
+                        app:layout_constraintTop_toTopOf="@+id/textViewInputOutputStream"
                         tools:layout_editor_absoluteX="103dp">
 
                     </FrameLayout>
@@ -103,7 +103,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/textViewInputOutputStream"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
@@ -131,7 +131,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                        app:layout_constraintTop_toBottomOf="@+id/textViewInputOutputStream" />
 
                     <TextView
                         android:id="@+id/textView13"
