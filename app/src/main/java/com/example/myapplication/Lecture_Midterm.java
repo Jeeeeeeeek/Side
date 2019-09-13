@@ -70,7 +70,7 @@ public class Lecture_Midterm extends AppCompatActivity implements AdapterView.On
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermTwo_TryAndCatch.class);
                     startActivity(intent);
                     finish();
-                }
+                }//
 
 
             }
