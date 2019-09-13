@@ -34,7 +34,7 @@ public class MidtermTwo_Assertion extends YouTubeBaseActivity {
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("RQ0bZRPYDFE");
+                youTubePlayer.loadVideo("RQ0bZRPYDFE");//
             }
 
             @Override
