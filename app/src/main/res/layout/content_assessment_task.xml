@@ -16,22 +16,24 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="match_parent">
+
         <Button
-            android:layout_margin="70dp"
-            android:layout_gravity="center"
             android:id="@+id/assessmenttask"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/roundb"
-            android:text="Assessment Task"/>
-        <Button
-            android:layout_margin="50dp"
             android:layout_gravity="center"
+            android:layout_margin="70dp"
+            android:background="@drawable/roundb_forspinner"
+            android:text="Assessment Task" />
+
+        <Button
             android:id="@+id/quiz"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/roundb"
-            android:text="Quiz"/>
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:background="@drawable/roundb_forspinner"
+            android:text="Quiz" />
 
 
 
