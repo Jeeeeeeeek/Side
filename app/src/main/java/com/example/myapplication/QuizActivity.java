@@ -20,6 +20,7 @@ public class QuizActivity extends AppCompatActivity {
     private Button mButtonChoice1;
     private Button mButtonChoice2;
     private Button mButtonChoice3;
+    private Button mButtonChoice4;
 
     private String mAnswer;
     private int mScore = 0;
@@ -34,6 +35,7 @@ public class QuizActivity extends AppCompatActivity {
         mButtonChoice1 = (Button)findViewById(R.id.choice1);
         mButtonChoice2 = (Button)findViewById(R.id.choice2);
         mButtonChoice3 = (Button)findViewById(R.id.choice3);
+        mButtonChoice4 = (Button)findViewById(R.id.choice4);
 
         updateQuestion();
 
@@ -92,6 +94,25 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
+
+        mButtonChoice4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+
+                if (mButtonChoice4.getText() == mAnswer){
+                    mScore = mScore + 1;
+                    updateScore(mScore);
+                    updateQuestion();
+
+                    Toast.makeText(QuizActivity.this, "Correct", Toast.LENGTH_SHORT).show();
+
+                }else {
+                    Toast.makeText(QuizActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
+                    updateQuestion();
+                }
+            }
+        });
+
     }
 
     private void updateQuestion(){
@@ -101,6 +122,7 @@ public class QuizActivity extends AppCompatActivity {
             mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
             mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
             mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
+            mButtonChoice4.setText(mQuestionLibrary.getChoice4(mQuestionNumber));
 
             mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
 
