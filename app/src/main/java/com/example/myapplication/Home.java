@@ -6,6 +6,7 @@ import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.util.Log;
 import android.view.View;
 
 import androidx.core.view.GravityCompat;
@@ -21,6 +22,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Toast;
+
+import java.sql.Time;
+import java.util.Calendar;
+import java.util.Date;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -46,6 +52,22 @@ public class Home extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        Calendar c = Calendar.getInstance();
+        c.set(Calendar.MONTH, 8);
+        c.set(Calendar.DATE, 15  );
+        c.set(Calendar.YEAR, 2019);
+        Date expirationDate = c.getTime();
+
+        Date currentDate = new Date();  //Calendar with current time/date
+        if (currentDate.compareTo(expirationDate) == 1){
+            Toast.makeText(this, "App expired ", Toast.LENGTH_SHORT).show();
+            Log.v("DATE", "App EXPIRED " + currentDate.compareTo(expirationDate) + "\nCurrent Date: " + currentDate + "\nexpirationDate Date: " + expirationDate);
+            Intent i = new Intent(Home.this, TimeOutActivity.class);
+            startActivity(i);
+            finish();
+        }
+
     }
 
     @Override

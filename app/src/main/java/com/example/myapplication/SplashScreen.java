@@ -9,6 +9,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Calendar;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -18,25 +21,18 @@ public class SplashScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
 
-
         new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent i = new Intent(SplashScreen.this, Home.class);
-                startActivity(i);
-                finish();
-            }
-        },splashTimeOut);
-
-
-
-
+                @Override
+                public void run() {
+                    Intent i = new Intent(SplashScreen.this, Home.class);
+                    startActivity(i);
+                    finish();
+                }
+            },splashTimeOut);
 
 
 
