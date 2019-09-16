@@ -18,6 +18,7 @@ public class FinalOne_InputOutputStream extends AppCompatActivity {
 
     TextView textViewInputOutputStream;
     TextView textViewByteStream;
+    TextView textViewFinalOneSubclass;
     YouTubePlayerView final1AYtView2;
     Button final1AYtButton;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
@@ -33,7 +34,11 @@ public class FinalOne_InputOutputStream extends AppCompatActivity {
         textViewByteStream = (TextView)findViewById(R.id.textViewByteStreams);
         textViewByteStream.setText(Html.fromHtml(getString(R.string.FinalOneBytestreams)));
 
-        final1AYtButton = (Button) findViewById(R.id.midtermYtButton4);
+        textViewFinalOneSubclass = (TextView)findViewById(R.id.textViewFinalOneSubclass);
+        textViewFinalOneSubclass.setText(Html.fromHtml(getString(R.string.FinalOneSubclass)));
+
+
+        final1AYtButton = (Button) findViewById(R.id.final1AYtButton);
         final1AYtView2 = (YouTubePlayerView) findViewById(R.id.final1AYtView2);
 
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
