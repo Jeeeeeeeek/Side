@@ -267,20 +267,34 @@
     ]]></string>
 
     <string name="FinalOneSubclass"><![CDATA[
-    • <b>9 Subclasses of InputStream defined under the JAVA SE8</b> <br>
-
-            > AudioInputStream <br>
-            > ByteArrayInputStream <br>
-            > FileInputStream <br>
-            > FilterInputStream <br>
-            > InputStream <br>
-            > ObjectInputStream <br>
-            > PipedInputStream <br>
-            > SequenceInputStream<br>
-            > StringBufferInputStream <br>
+    • <b> 9 Subclasses of InputStream defined under the JAVA SE8</b> <br>
+            ‣ AudioInputStream <br>
+            ‣ ByteArrayInputStream <br>
+            ‣ FileInputStream <br>
+            ‣ FilterInputStream <br>
+            ‣ InputStream <br>
+            ‣ ObjectInputStream <br>
+            ‣ PipedInputStream <br>
+            ‣ SequenceInputStream<br>
+            ‣ StringBufferInputStream <br>
         <br>
     ]]></string>
 
+    <string name="FinalTwo"><![CDATA[
+    • <b> Swing </b> is a GUI widget toolkit for Java. It is part of Oracle&#39;s Java Foundation
+    Classes (JFC) – an API for providing a graphical user interface (GUI) for Java programs. <br>
+
+    • Swing was developed to provide a more sophisticated set of GUI components than the
+    earlier Abstract Window Toolkit (AWT). Swing provides a look and feel that emulates
+    the look and feel of several platforms, and also supports a pluggable look and feel that
+    allows applications to have a look and feel unrelated to the underlying platform. It has
+    more powerful and flexible components than AWT. <br>
+
+    <br>
+    <br>
+
+    <b> Difference between AWT and Swing </b>
+]]></string>
 
     <string-array name="MidtermTwoLessons">
         <item>Exception Handling</item>
@@ -304,5 +318,25 @@
         <item>Information Hiding</item>
     </string-array>
 
+    <string-array name="FinalOneLessons">
+        <item>Basic Input / Output</item>
+        <item>File Input/Output</item>
+        <item>File Input/Output Stream</item>
+    </string-array>
+
+    <string-array name="FinalTwoLessons">
+        <item>Swing</item>
+        <item>Layout Manager</item>
+        <item>Swing Components </item>
+    </string-array>
+
+    <string-array name="FinalThreeLessons">
+        <item>Applets</item>
+        <item>Applet Class and Life Cycle</item>
+        <item>Applet Parameters </item>
+        <item>Event Handling </item>
+        <item>Images and Sounds </item>
+
+    </string-array>
 
 </resources>

@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/comprologo"
@@ -9,8 +13,13 @@
         android:roundIcon="@drawable/comprologo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".PrelimQuiz"/>
-        <activity android:name=".QuizActivity"></activity>
+        <activity android:name=".FinalTwo_LayoutManager"></activity>
+        <activity android:name=".FinalOne_FileInputOutput" />
+        <activity android:name=".FinalOne_FileInputOutputStream" />
+        <activity android:name=".FinalTwo_SwingComponents" />
+        <activity android:name=".FinalTwo" />
+        <activity android:name=".PrelimQuiz" />
+        <activity android:name=".QuizActivity" />
         <activity android:name=".MidtermFourInformationHiding" />
         <activity android:name=".MidtermFourSuperclassMethod" />
         <activity android:name=".MidtermFourConstructorsDuringInheritance" />
@@ -62,9 +71,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>

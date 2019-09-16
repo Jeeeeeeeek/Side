@@ -22,7 +22,6 @@ public class FinalOne extends YouTubeBaseActivity {
     YouTubePlayerView finalYTView1;
     Button finalYTButton1;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
-    ImageView imgView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

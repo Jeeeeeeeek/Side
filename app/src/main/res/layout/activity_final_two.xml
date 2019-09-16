@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffff"
-    tools:context=".FinalOne_FileInputOutput">
+    android:background="#FFFFFF"
+    tools:context=".FinalTwo">
+
 
     <TextView
         android:id="@+id/textView7"
@@ -16,7 +17,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="FILE INPUT/OUTPUT"
+        android:text="SWING"
         android:textColor="#000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,12 +37,12 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp">
+            android:layout_height="match_parent">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2"
-                android:layout_width="379dp"
-                android:layout_height="441dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginEnd="16dp"
@@ -64,43 +65,103 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="395dp"
+                    android:layout_height="match_parent"
                     android:layout_margin="10dp">
 
                     <TextView
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="FILE INPUT/OUTPUT"
+                        android:text="Swing"
                         android:textColor="#000"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
+                    <TextView
+                        android:id="@+id/textViewFinalTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="339dp"
+                        android:layout_height="178dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="22dp"
+                        android:layout_marginRight="22dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewFinalTwo"
+                        app:srcCompat="@drawable/finaltwo1" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="339dp"
+                        android:layout_height="23dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Hierarchy of Java Swing classes"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        android:textColor="#000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="345dp"
+                        android:layout_height="281dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2"
+                        app:srcCompat="@drawable/finaltwo2" />
+
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/final1BcardView3"
+                        android:id="@+id/finalAView2"
                         android:layout_width="0dp"
                         android:layout_height="300dp"
                         android:layout_marginStart="4dp"
                         android:layout_marginLeft="4dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="330dp"
                         android:layout_marginEnd="4dp"
                         android:layout_marginRight="4dp"
-                        android:layout_marginBottom="8dp"
+                        android:layout_marginBottom="16dp"
                         app:cardBackgroundColor="#FFFF"
                         app:cardCornerRadius="8dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView8">
+                        app:layout_constraintTop_toBottomOf="@+id/imageView6">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
                             <Button
-                                android:id="@+id/final1BYtButton3"
+                                android:id="@+id/final1AYtButton"
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="4dp"
@@ -112,27 +173,28 @@
                                 android:textColor="#000"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/final1BYtView3" />
+                                app:layout_constraintTop_toBottomOf="@+id/midtermYtView1" />
 
                             <TextView
-                                android:id="@+id/final1BVideoTitle3"
+                                android:id="@+id/finalVideoTitle2"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
                                 android:padding="10dp"
-                                android:text="Learn Programming in Java: File Input/Output"
+                                android:text="A Basic Swing Application"
                                 android:textColor="#000"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/final1BYtButton3"
+                                app:layout_constraintEnd_toStartOf="@+id/midtermYtButton1"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/final1BYtView3" />
+                                app:layout_constraintTop_toBottomOf="@+id/final1AYtView2" />
 
                             <view
-                                android:id="@+id/final1BYtView3"
+                                android:id="@+id/final1AYtView2"
                                 class="com.google.android.youtube.player.YouTubePlayerView"
                                 android:layout_width="match_parent"
                                 android:layout_height="260dp"
                                 app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -147,5 +209,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

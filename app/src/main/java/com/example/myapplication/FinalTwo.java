@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -13,12 +14,8 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-
-public class FinalOne_InputOutputStream extends AppCompatActivity {
-
-    TextView textViewInputOutputStream;
-    TextView textViewByteStream;
-    TextView textViewFinalOneSubclass;
+public class FinalTwo extends YouTubeBaseActivity {
+    TextView textViewFinalTwo;
     YouTubePlayerView final1AYtView2;
     Button final1AYtButton;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
@@ -26,17 +23,16 @@ public class FinalOne_InputOutputStream extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_final_one__input_output_stream);
+        setContentView(R.layout.activity_final_two);
 
-        textViewInputOutputStream = (TextView)findViewById(R.id.textViewInputOutputStream);
-        textViewInputOutputStream.setText(Html.fromHtml(getString(R.string.FinalOneInputOutputStream)));
+        ImageView iv = (ImageView)findViewById(R.id.imageView6);
+        iv.setImageResource(R.drawable.finaltwo1);
 
-        textViewByteStream = (TextView)findViewById(R.id.textViewByteStreams);
-        textViewByteStream.setText(Html.fromHtml(getString(R.string.FinalOneBytestreams)));
+        ImageView iv1 = (ImageView)findViewById(R.id.imageView7);
+        iv1.setImageResource(R.drawable.finaltwo2);
 
-        textViewFinalOneSubclass = (TextView)findViewById(R.id.textViewFinalOneSubclass);
-        textViewFinalOneSubclass.setText(Html.fromHtml(getString(R.string.FinalOneSubclass)));
-
+        textViewFinalTwo = (TextView)findViewById(R.id.textViewFinalTwo);
+        textViewFinalTwo.setText(Html.fromHtml(getString(R.string.FinalTwo)));
 
         final1AYtButton = (Button) findViewById(R.id.final1AYtButton);
         final1AYtView2 = (YouTubePlayerView) findViewById(R.id.final1AYtView2);
@@ -44,7 +40,7 @@ public class FinalOne_InputOutputStream extends AppCompatActivity {
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("3YRahx2ltSg");//
+                youTubePlayer.loadVideo("jUEOWVjnIR8");//
             }
 
             @Override
@@ -62,3 +58,4 @@ public class FinalOne_InputOutputStream extends AppCompatActivity {
 
     }
 }
+

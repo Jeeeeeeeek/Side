@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".FinalOne_FileInputOutputStream">
+    android:layout_height="match_parent"
+    tools:context=".FinalTwo_SwingComponents">
 
     <TextView
         android:id="@+id/textView7"
@@ -16,7 +16,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Input / Output Stream"
+        android:text="SWING COMPONENTS "
         android:textColor="#000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Input / Output Stream"
+                        android:text="Swing Components "
                         android:textColor="#000"
                         android:textSize="24sp"
                         android:textStyle="bold"
@@ -79,13 +79,14 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/textViewInputOutputStream"
+                        android:id="@+id/textViewFinalTwoA"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="5dp"
+                        android:text=" For more details on each item, click here: \n http://web.mit.edu/6.005/www/sp14/psets/ps4/java-6-tutorial/components.html"
                         android:layout_marginRight="5dp"
                         android:textColor="#000"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -104,52 +105,83 @@
                         android:layout_marginRight="22dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textViewInputOutputStream"
-                        app:srcCompat="@drawable/finaloneaimage1" />
-
-                    <TextView
-                        android:id="@+id/textViewByteStreams"
-                        android:layout_width="339dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginRight="10dp"
-                        android:textColor="#000"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+                        app:layout_constraintTop_toBottomOf="@+id/textViewFinalTwoA"
+                        app:srcCompat="@drawable/finaltwob1" />
 
                     <ImageView
                         android:id="@+id/imageView7"
-                        android:layout_width="350dp"
-                        android:layout_height="335dp"
+                        android:layout_width="351dp"
+                        android:layout_height="368dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                        app:srcCompat="@drawable/finaltwob2" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="347dp"
+                        android:layout_height="134dp"
                         android:layout_marginStart="5dp"
                         android:layout_marginLeft="5dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="5dp"
                         android:scaleType="fitCenter"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textViewByteStreams"
-                        app:srcCompat="@drawable/finaloneaimage2" />
+                        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                        app:srcCompat="@drawable/finaltwob3" />
 
-                    <TextView
-                        android:id="@+id/textViewFinalOneSubclass"
-                        android:layout_width="345dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="6dp"
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="14dp"
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="364dp"
+                        android:layout_height="143dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="5dp"
-                        android:textColor="@android:color/black"
+                        android:scaleType="fitCenter"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+                        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+                        app:srcCompat="@drawable/finaltwob4" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="361dp"
+                        android:layout_height="355dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                        app:srcCompat="@drawable/finaltwob5" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="361dp"
+                        android:layout_height="415dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                        app:srcCompat="@drawable/finaltwob6" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/finalAView2"
@@ -157,7 +189,7 @@
                         android:layout_height="300dp"
                         android:layout_marginStart="4dp"
                         android:layout_marginLeft="4dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="1450dp"
                         android:layout_marginEnd="4dp"
                         android:layout_marginRight="4dp"
                         android:layout_marginBottom="16dp"
@@ -166,14 +198,14 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textViewFinalOneSubclass">
+                        app:layout_constraintTop_toBottomOf="@+id/imageView6">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
                             <Button
-                                android:id="@+id/final1AYtButton"
+                                android:id="@+id/final1BYtButton"
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
                                 android:layout_marginTop="4dp"
@@ -185,7 +217,7 @@
                                 android:textColor="#000"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/final1AYtView2" />
+                                app:layout_constraintTop_toBottomOf="@+id/midtermYtView1" />
 
                             <TextView
                                 android:id="@+id/finalVideoTitle2"
@@ -193,15 +225,15 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
                                 android:padding="10dp"
-                                android:text="Input / Output Stream"
+                                android:text="Adding Swing Components"
                                 android:textColor="#000"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/final1AYtButton"
+                                app:layout_constraintEnd_toStartOf="@+id/midtermYtButton1"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/final1AYtView2" />
 
                             <view
-                                android:id="@+id/final1AYtView2"
+                                android:id="@+id/final1BYtView2"
                                 class="com.google.android.youtube.player.YouTubePlayerView"
                                 android:layout_width="match_parent"
                                 android:layout_height="260dp"

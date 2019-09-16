@@ -23,13 +23,6 @@ public class Lecture_Midterm extends AppCompatActivity implements AdapterView.On
         setContentView(R.layout.activity_lecture__midterm);
 
 
-        spinnerMidtermTwo = (Spinner) findViewById(R.id.spinnerMidtermTwo);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.MidtermTwoLessons, R.layout.spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerMidtermTwo.setAdapter(adapter);
-        spinnerMidtermTwo.setOnItemSelectedListener(this);
-
 
         btnMidtermBack = (Button) findViewById(R.id.btnMidtermBack);
         btnMidtermBack.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +41,14 @@ public class Lecture_Midterm extends AppCompatActivity implements AdapterView.On
                 finish();
             }
         });
+
+
+        spinnerMidtermTwo = (Spinner) findViewById(R.id.spinnerMidtermTwo);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.MidtermTwoLessons, R.layout.spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerMidtermTwo.setAdapter(adapter);
+        spinnerMidtermTwo.setOnItemSelectedListener(this);
 
 
         midtermtwo = (Button) findViewById(R.id.midtermtwo);
