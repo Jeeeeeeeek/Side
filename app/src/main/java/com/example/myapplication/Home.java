@@ -55,7 +55,7 @@ public class Home extends AppCompatActivity
 
         Calendar c = Calendar.getInstance();
         c.set(Calendar.MONTH, 8);
-        c.set(Calendar.DATE, 15  );
+        c.set(Calendar.DATE, 24);
         c.set(Calendar.YEAR, 2019);
         Date expirationDate = c.getTime();
 
