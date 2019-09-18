@@ -32,6 +32,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
         <TextView
             android:id="@+id/textView9"
             android:layout_width="189dp"
@@ -40,7 +41,7 @@
             android:layout_marginStart="112dp"
 
             android:layout_marginLeft="112dp"
-            android:layout_marginTop="98dp"
+            android:layout_marginTop="112dp"
             android:layout_marginEnd="112dp"
             android:layout_marginRight="112dp"
             android:text="Final Period"
@@ -49,16 +50,16 @@
             android:textStyle="bold"
             android:typeface="serif"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <Spinner
             android:id="@+id/spinnerfinalone"
             android:layout_width="101dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="88dp"
-            android:layout_marginRight="88dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginRight="68dp"
             android:background="@drawable/roundb_forspinner"
             android:spinnerMode="dropdown"
             app:layout_constraintBottom_toBottomOf="@+id/finalone"
@@ -71,23 +72,23 @@
             android:layout_width="208dp"
             android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginStart="65dp"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="56dp"
-            android:layout_marginEnd="134dp"
-            android:layout_marginRight="134dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
             android:background="@drawable/roundb"
             android:text="Basic Input / Output"
             android:textColor="#000"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintHorizontal_bias="0.444"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <Spinner
             android:id="@+id/spinnerfinaltwo"
-            android:layout_width="108dp"
-            android:layout_height="49dp"
+            android:layout_width="105dp"
+            android:layout_height="48dp"
             android:background="@drawable/roundb_forspinner"
             android:spinnerMode="dropdown"
             app:layout_constraintBottom_toBottomOf="@+id/finaltwo"
@@ -97,8 +98,8 @@
 
         <Button
             android:id="@+id/finaltwo"
-            android:layout_width="213dp"
-            android:layout_height="wrap_content"
+            android:layout_width="208dp"
+            android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="60dp"
             android:background="@drawable/roundb"
@@ -111,10 +112,8 @@
 
         <Spinner
             android:id="@+id/spinnerfinalthree"
-            android:layout_width="104dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="3dp"
-            android:layout_marginRight="3dp"
+            android:layout_width="102dp"
+            android:layout_height="49dp"
             android:background="@drawable/roundb_forspinner"
             android:spinnerMode="dropdown"
             app:layout_constraintBottom_toBottomOf="@+id/finalthree"
@@ -124,14 +123,15 @@
 
         <Button
             android:id="@+id/finalthree"
-            android:layout_width="213dp"
-            android:layout_height="wrap_content"
+            android:layout_width="209dp"
+            android:layout_height="49dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="59dp"
+            android:layout_marginTop="56dp"
             android:background="@drawable/roundb"
             android:text="Applets"
             android:textColor="#000"
             app:layout_constraintEnd_toEndOf="@+id/finaltwo"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/finaltwo"
             app:layout_constraintTop_toBottomOf="@+id/finaltwo" />
 

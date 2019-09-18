@@ -86,8 +86,8 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="5dp"
-                        android:text=" For more details on each item, click here: \n http://web.mit.edu/6.005/www/sp14/psets/ps4/java-6-tutorial/components.html"
                         android:layout_marginRight="5dp"
+                        android:text="Visit this link for more information:http://web.mit.edu/6.005/www/sp14/psets/ps4/java-6-tutorial/components.html"
                         android:textColor="#000"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -184,9 +184,9 @@
                         app:srcCompat="@drawable/finaltwob6" />
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/finalAView2"
-                        android:layout_width="0dp"
-                        android:layout_height="300dp"
+                        android:id="@+id/finalBView2"
+                        android:layout_width="350dp"
+                        android:layout_height="299dp"
                         android:layout_marginStart="4dp"
                         android:layout_marginLeft="4dp"
                         android:layout_marginTop="6dp"
@@ -225,7 +225,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="bottom"
                                 android:padding="10dp"
-                                android:text="Adding Swing Components"
+                                android:text="Adding Components "
                                 android:textColor="#000"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/midtermYtButton1"

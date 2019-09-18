@@ -74,6 +74,11 @@ public class MidtermFourInheritanceAndInterface extends YouTubeBaseActivity {
 
             }
         };
-
+        midtermYtButton5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                midtermYtView5.initialize(YoutubeConfig.getApiKey(), mOnInitializedListener);
+            }
+        });
     }
 }
