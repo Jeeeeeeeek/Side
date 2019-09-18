@@ -296,6 +296,124 @@
     <b> Difference between AWT and Swing </b>
 ]]></string>
 
+    <string name="FinalTwoLayoutManager1"><![CDATA[
+   <p> Every content pane is initialized to use a BorderLayout. (As Using Top-Level  Containers explains, the content pane is the main container in all frames, applets, and dialogs.) A BorderLayout places components in up to five areas: top, bottom, left, right, and center. All extra space is placed in the center area. Tool bars that are created using  JToolBar  must be created within a BorderLayout container, if you want to be able to drag and drop the bars away from their starting positions. <br>
+ </p>
+    <br>
+
+    <b> • Box Layout </b>
+]]></string>
+
+    <string name="FinalTwoLayoutManager2"><![CDATA[
+   <p> The BoxLayout class puts components in a single row or column. It respects the components&#39; requested maximum sizes and also lets you align components. For further details, see How to Use BoxLayout. <br>
+ </p>
+    <br>
+
+    <b> • Card Layout </b>
+]]></string>
+
+    <string name="FinalTwoLayoutManager3"><![CDATA[
+   <p> The CardLayout class lets you implement an area that contains different components at different times. A CardLayout is often controlled by a combo box, with the state of the combo box determining which panel (group of components) the CardLayout displays. An alternative to using CardLayout is using a tabbed pane, which provides similar functionality but with a pre- defined GUI. <br>
+ </p>
+    <br>
+
+    <b> • FlowLayout </b>
+]]></string>
+
+
+    <string name="FinalTwoLayoutManager4"><![CDATA[
+   <p>  FlowLayout is the default layout manager for every JPanel. It simply lays out components in a single row, starting a new row if its container is not sufficiently wide. Both panels in  CardLayoutDemo, shown previously, use FlowLayout. <br>
+ </p>
+    <br>
+
+    <b> • GridBagLayout </b>
+]]></string>
+
+    <string name="FinalTwoLayoutManager5"><![CDATA[
+   <p>  GridBagLayout is a sophisticated, flexible layout manager. It aligns components by placing them within a grid of cells, allowing components to span more than one cell. The rows in the grid can have different heights, and grid columns can have different widths. <br>
+ </p>
+    <br>
+
+    <b> • GridLayout </b>
+]]></string>
+
+    <string name="FinalTwoLayoutManager6"><![CDATA[
+   <p> GridLayout simply makes a bunch of components equal in size and displays them in the requested number of rows and columns. <br>
+ </p>
+    <br>
+
+    <b> • GroupLayout </b>
+]]></string>
+
+    <string name="FinalTwoLayoutManager7"><![CDATA[
+   <p> •  GroupLayout is a layout manager that was developed for use by GUI builder tools, but it can also be used manually. GroupLayout works with the horizontal and vertical layouts separately. The layout is defined for each dimension independently. Consequently, however, each component needs to be defined twice in the layout. The Find window shown above is an example of a GroupLayout. <br>
+ </p>
+    <br>
+
+    <b> • SpringLayout </b>
+]]></string>
+
+    <string name="FinalTwoLayoutManager8"><![CDATA[
+   <p> SpringLayout is a flexible layout manager designed for use by GUI builders. It lets you specify precise relationships between the edges of components under its control. For example, you might define that the left edge of one component is a certain distance (which can be dynamically calculated) from the right edge of a second component. SpringLayout lays out the children of its associated container according to a set of constraints <br>
+ </p>
+    <br>
+]]></string>
+
+
+    <string name="FinalTwoLayoutManager9"><![CDATA[
+   <b> EVENT HANDLING </b> <br>
+•<b> Event Handling </b> is the mechanism that controls the event and decides what should
+happen if an event occurs. This mechanism has a code which is known as an event
+handler, that is executed when an event occurs. Java uses the Delegation EventModel
+to handle the events.   <br>
+<br>
+
+    <b> Types of Event </b> <br>
+
+•<b> Foreground Events </b> iThese events require direct interaction of the user. They are
+generated as consequences of a person interacting with the graphical components in the
+Graphical User Interface. For example, clicking on a button, moving the mouse, entering
+a character through keyboard, selecting an item from list, scrolling the page, etc. <br>
+<br>
+
+•<b> Background Events </b> iThese events require direct interaction of the user. They are
+generated as consequences of a person interacting with the graphical components in the
+Graphical User Interface. For example, clicking on a button, moving the mouse, entering
+a character through keyboard, selecting an item from list, scrolling the page, etc. <br>
+<br>
+
+• Java uses the Delegation Event Model to handle the events. This model defines the
+standard mechanism to generate and handle the events. <br>
+ <br>
+The Delegation Event Model has the following key participants.<br>
+
+<br>
+o <b>Source</b> − The source is an object on which the event occurs. Source is responsible
+for providing information of the occurred event to it&#39;s handler. Java provide us with
+classes for the source object. <br>
+
+o <b>Listener</b> − It is also known as event handler. The listener is responsible for
+generating a response to an event. From the point of view of Java implementation,
+the listener is also an object. The listener waits till it receives an event. Once the
+event is received, the listener processes the event and then returns. <br>
+<br>
+<br>
+
+<b> Steps Involved in Event Handling</b> <br>
+    <b>Step 1</b> − The user clicks the button and the event is generated. <br>
+    <b>Step 2</b> − The object of concerned event class is created automatically and information
+    about the source and the event get populated within the same object.<br>
+    <b>Step 3</b> − Event object is forwarded to the method of the registered listener class. <br>
+    <b>Step 4</b>− The method is gets executed and returns.<br>
+
+
+
+
+]]></string>
+
+
+
+
     <string-array name="MidtermTwoLessons">
         <item>Exception Handling</item>
         <item>Try and Catch</item>
@@ -326,8 +444,8 @@
 
     <string-array name="FinalTwoLessons">
         <item>Swing</item>
-        <item>Layout Manager</item>
         <item>Swing Components </item>
+        <item>Layout Manager</item>
     </string-array>
 
     <string-array name="FinalThreeLessons">
