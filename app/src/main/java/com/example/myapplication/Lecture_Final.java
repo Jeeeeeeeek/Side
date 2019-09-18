@@ -105,50 +105,50 @@ public class Lecture_Final extends AppCompatActivity implements AdapterView.OnIt
             }
         });
 
-    //    spinnerfinalthree = (Spinner) findViewById(R.id.spinnerfinalthree);
-    //    ArrayAdapter<CharSequence> adapter6 = ArrayAdapter.createFromResource(this,
-     //           R.array.FinalThreeLessons, R.layout.spinner_item);
-   //     adapter6.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-   //     spinnerfinalthree.setAdapter(adapter6);
-   //     spinnerfinalthree.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-    //        @Override
-    //        public void onItemSelected(AdapterView<?> parent, View view, int pos, long l) {
-      //          finalthree.setText(parent.getItemAtPosition(pos).toString());
-     //       }
+        spinnerfinalthree = (Spinner) findViewById(R.id.spinnerfinalthree);
+        ArrayAdapter<CharSequence> adapter6 = ArrayAdapter.createFromResource(this,
+                R.array.FinalThreeLessons, R.layout.spinner_item);
+        adapter6.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerfinalthree.setAdapter(adapter6);
+        spinnerfinalthree.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int pos, long l) {
+                finalthree.setText(parent.getItemAtPosition(pos).toString());
+            }
 
-       //     @Override
-       //     public void onNothingSelected(AdapterView<?> adapterView) {
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
 
-       //     }
-     //   });
+           }
+        });
 
-      //  finalthree = (Button) findViewById(R.id.finalthree);
-      //  finalthree.setOnClickListener(new View.OnClickListener() {
-      //      @Override
-       //     public void onClick(View view) {
-       //         if (finalthree.getText().equals("Applets")) {
-       //             Intent intent = new Intent(Lecture_Final.this, FinalThree.class);
-       //             startActivity(intent);
-        //            finish();
-        //        } else if (finalthree.getText().equals("Applet Class and Life Cycle")) {
-         //           Intent intent = new Intent(Lecture_Final.this, FinalThree_Applet_Class_and_Life_Cycle.class);
-        //            startActivity(intent);
-         //           finish();
-         //       } else if (finalthree.getText().equals("Applet Parameters")) {
-          //          Intent intent = new Intent(Lecture_Final.this, FinalThree_Applet_Parameters.class);
-          //          startActivity(intent);
-          //          finish();
-          //      }else if (finalthree.getText().equals("Event Handling")) {
-          //          Intent intent = new Intent(Lecture_Final.this, FinalThree_Event_Handling.class);
-          //          startActivity(intent);
-           //         finish();
-          //      }else if (finalthree.getText().equals("Image and Sounds")) {
-           //         Intent intent = new Intent(Lecture_Final.this, FinalThree_Image_and_Sounds.class);
-            //        startActivity(intent);
-            //        finish();
-           //     }
-          // }
-       // });
+        finalthree = (Button) findViewById(R.id.finalthree);
+        finalthree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (finalthree.getText().equals("Applets")) {
+                    Intent intent = new Intent(Lecture_Final.this, FinalThree.class);
+                   startActivity(intent);
+                   finish();
+               } else if (finalthree.getText().equals("Applet Class and Life Cycle")) {
+                   Intent intent = new Intent(Lecture_Final.this, FinalThree_AppletClassAndLifeCycle.class);
+                   startActivity(intent);
+                   finish();
+               } else if (finalthree.getText().equals("Applet Parameters")) {
+                    Intent intent = new Intent(Lecture_Final.this, FinalThree_AppletParameters.class);
+                    startActivity(intent);
+                    finish();
+                }else if (finalthree.getText().equals("Event Handling")) {
+                    Intent intent = new Intent(Lecture_Final.this, FinalThree_EventHandling.class);
+                    startActivity(intent);
+                    finish();
+                }else if (finalthree.getText().equals("Image and Sounds")) {
+                    Intent intent = new Intent(Lecture_Final.this, FinalThree_ImagesAndSounds.class);
+                    startActivity(intent);
+                    finish();
+                }
+           }
+        });
     }
 
     public void openLecture() {
