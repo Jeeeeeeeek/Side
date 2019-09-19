@@ -412,6 +412,160 @@ event is received, the listener processes the event and then returns. <br>
 ]]></string>
 
 
+    <string name="FinalThree"><![CDATA[
+An <b>applet</b> is a Java program that runs in a Web browser. An applet can be a fully functional
+Java application because it has the entire Java API at its disposal. <br>
+Differences between an applet and a standalone Java application: <br>
+• An applet is a Java class that extends the java.applet.Applet class. <br>
+• A main() method is not invoked on an applet, and an applet class will not define main(). <br>
+• Applets are designed to be embedded within an HTML page. <br>
+• When a user views an HTML page that contains an applet, the code for the applet is
+downloaded to the user&#39;s machine. <br>
+• A JVM is required to view an applet. The JVM can be either a plug-in of the Web
+browser or a separate runtime environment.<br>
+• The JVM on the user&#39;s machine creates an instance of the applet class and invokes
+various methods during the applet&#39;s lifetime. <br>
+• Applets have strict security rules that are enforced by the Web browser. The security of
+an applet is often referred to as sandbox security, comparing the applet to a child playing
+in a sandbox with various rules that must be followed. <br>
+• Other classes that the applet needs can be downloaded in a single Java Archive (JAR)
+file. <br>
+]]></string>
+
+
+    <string name="FinalThreeA"><![CDATA[
+
+  <b>  • The Applet Class </b> <br>
+    Every applet is an extension of the <i>java.applet.Applet class. </i> The base Applet class provides
+    methods that a derived Applet class may call to obtain information and services from the
+    browser context. <br>
+    <br>
+    These include methods that do the following: <br>
+    <br>
+    • Get applet parameters <br>
+    • Get the network location of the HTML file that contains the applet <br>
+    • Get the network location of the applet class directory <br>
+    • Print a status message in the browser <br>
+    • Fetch an image <br>
+    • Fetch an audio clip <br>
+    • Play an audio clip <br>
+    • Resize the applet <br>
+ <br>
+    Additionally, the Applet class provides an interface by which the viewer or browser obtains
+    information about the applet and controls the applet&#39;s execution. The viewer may − <br>
+     <br>
+    • Request information about the author, version, and copyright of the applet <br>
+    • Request a description of the parameters the applet recognizes <br>
+    • Initialize the applet <br>
+    • Destroy the applet <br>
+    • Start the applet&#39;s execution <br>
+    • Stop the applet&#39;s execution <br> <br>
+    The Applet class provides default implementations of each of these methods. Those
+    implementations may be overridden as necessary. <br>
+    <br>
+
+    • <b> Life Cycle of an Applet </b> <br>
+
+    Four methods in the Applet class gives you the framework on which you build any serious
+    applet <br>
+    • <b>init </b> − This method is intended for whatever initialization is needed for your applet. It is
+    called after the param tags inside the applet tag have been processed. <br>
+    • <b>start</b> − This method is automatically called after the browser calls the init method. It is
+    also called whenever the user returns to the page containing the applet after having gone
+    off to other pages.<br>
+    • <b>stop</b> − This method is automatically called when the user moves off the page on which
+    the applet sits. It can, therefore, be called repeatedly in the same applet.<br>
+    • <b>destroy</b> − This method is only called when the browser shuts down normally. Because
+    applets are meant to live on an HTML page, you should not normally leave resources
+    behind after a user leaves the page that contains the applet. <br>
+    • <b>paint </b>− Invoked immediately after the start() method, and also any time the applet needs
+    to repaint itself in the browser. The paint() method is actually inherited from the
+    java.awt. <br>
+<br>
+
+    ]]></string>
+
+
+    <string name="FinalThreeA1"><![CDATA[
+
+<b>INVOKING AN APPLETS</b>
+
+An applet may be invoked by embedding directives in an HTML file and viewing the file
+through an applet viewer or Java-enabled browser. <br>
+
+The &lt;applet&gt; tag is the basis for embedding an applet in an HTML file. <br>
+
+<b>Example: </b>
+
+]]></string>
+
+    <string name="FinalThreeA2"><![CDATA[
+The code attribute of the &lt;applet&gt; tag is required. It specifies the Applet class to run. Width and
+height are also required to specify the initial size of the panel in which an applet runs. The
+applet directive must be closed with an &lt;/applet&gt; tag.
+If an applet takes parameters, values may be passed for the parameters by adding &lt;param&gt; tags
+between &lt;applet&gt; and &lt;/applet&gt;. The browser ignores text and other tags between the applet
+tags.
+Non-Java-enabled browsers do not process &lt;applet&gt; and &lt;/applet&gt;. Therefore, anything that
+appears between the tags, not related to the applet, is visible in non-Java-enabled browsers.
+The viewer or browser looks for the compiled Java code at the location of the document. To
+specify otherwise:
+
+]]></string>
+
+    <string name="FinalThreeA3"><![CDATA[
+    If an applet resides in a package other than the default, the holding package must be specified in
+    the code attribute using the period character (.) to separate package/class components. For
+    example:
+]]></string>
+
+    <string name="FinalThreeC"><![CDATA[
+• Applets inherit a group of event-handling methods from the Container class. The
+Container class defines several methods, such as processKeyEvent and
+processMouseEvent, for handling particular types of events, and then one catch-all
+method called processEvent. <br>
+• In order to react to an event, an applet must override the appropriate event-specific
+method. <br>
+<br>
+
+<b> Example: </b>
+
+   ]]></string>
+
+    <string name="FinalThreeC1"><![CDATA[
+In the above example, we have created all the controls in init() method because it is invoked only once.
+<br>
+
+<b> myapplet.html </b>
+
+   ]]></string>
+
+    <string name="FinalThreeD"><![CDATA[
+<b> • IMAGES </b> <br>
+•An applet can display images of the format GIF, JPEG, BMP, and others. To display an
+image within the applet, you use the drawImage() method found in the java.awt.Graphics
+class.
+     ]]></string>
+
+
+    <string name="FinalThreeD1"><![CDATA[
+<b> • SOUNDS </b> <br>
+An applet can play an audio file represented by the AudioClip interface in the java.applet
+package. The AudioClip interface has three methods, including: <br>
+
+<br>
+•<b>public void play() </b>− Plays the audio clip one time, from the beginning. <br>
+• public void loop()</b>− Causes the audio clip to replay continually. <br>
+• public void stop()</b>− Stops playing the audio clip. <br>
+<br>
+
+To obtain an AudioClip object, you must invoke the getAudioClip() method of the Applet class.
+The getAudioClip() method returns immediately, whether or not the URL resolves to an actual
+audio file. The audio file is not downloaded until an attempt is made to play the audio clip. <br>
+
+<b> Example: </b>
+     ]]></string>
+
     <string-array name="MidtermTwoLessons">
         <item>Exception Handling</item>
         <item>Try and Catch</item>
