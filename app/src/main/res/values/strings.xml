@@ -412,8 +412,6 @@ event is received, the listener processes the event and then returns. <br>
 ]]></string>
 
 
-
-
     <string-array name="MidtermTwoLessons">
         <item>Exception Handling</item>
         <item>Try and Catch</item>

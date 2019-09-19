@@ -69,37 +69,31 @@ public class Lecture_Prelim extends AppCompatActivity {
     public void openFive() {
         Intent intent = new Intent(this,PrelimFive.class);
         startActivity(intent);
-        finish();
     }
 
     public void openPrelimFour() {
         Intent intent = new Intent(this, Prelimfour.class);
         startActivity(intent);
-        finish();
     }
 
     public void openPrelimThree() {
         Intent intent = new Intent(this, PrelimThree.class);
         startActivity(intent);
-        finish();
     }
 
     public void openPrelimTwo() {
         Intent intent = new Intent(this,prelimtwo.class);
         startActivity(intent);
-        finish();
     }
 
     public void openPrelimone() {
         Intent intent = new Intent(this,Prelimone.class);
         startActivity(intent);
-        finish();
     }
 
     public void openLecture() {
         Intent intent = new Intent(this, Lecture.class);
         startActivity(intent);
-        finish();
 
     }
 

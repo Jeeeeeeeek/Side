@@ -54,9 +54,8 @@ public class AssessmentTask extends AppCompatActivity
         quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AssessmentTask.this, PrelimQuiz.class);
+                Intent intent = new Intent(AssessmentTask.this, QuizHome.class);
                 startActivity(intent);
-                finish();
             }
         });
     }

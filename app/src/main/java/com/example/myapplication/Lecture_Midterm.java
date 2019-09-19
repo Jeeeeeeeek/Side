@@ -38,7 +38,6 @@ public class Lecture_Midterm extends AppCompatActivity implements AdapterView.On
             public void onClick(View view) {
                 Intent intent = new Intent(Lecture_Midterm.this, MidtermOne.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -58,20 +57,16 @@ public class Lecture_Midterm extends AppCompatActivity implements AdapterView.On
                 if(midtermtwo.getText().equals("Exception Handling")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermTwo.class);
                     startActivity(intent);
-                    finish();
                 }else if(midtermtwo.getText().equals("User Defined Exceptions")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermTwo_UserDefined.class);
                     startActivity(intent);
-                    finish();
                 }else if(midtermtwo.getText().equals("Assertions")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermTwo_Assertion.class);
                     startActivity(intent);
-                    finish();
                 }else if(midtermtwo.getText().equals("Try and Catch")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermTwo_TryAndCatch.class);
                     startActivity(intent);
-                    finish();
-                }//
+                }
 
 
             }
@@ -102,19 +97,15 @@ public class Lecture_Midterm extends AppCompatActivity implements AdapterView.On
                 if(midtermthree.getText().equals("Arrays and Array List")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermThree.class);
                     startActivity(intent);
-                    finish();
                 }else if(midtermthree.getText().equals("Declaring and Initializing Arrays")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermThree_InitializingArrays.class);
                     startActivity(intent);
-                    finish();
                 }else if(midtermthree.getText().equals("Array of Objects")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermThree_ArrayofObjects.class);
                     startActivity(intent);
-                    finish();
                 }else if(midtermthree.getText().equals("2D and Multidimentional Array")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermThree_2DandMDArrays.class);
                     startActivity(intent);
-                    finish();
                 }
             }
         });
@@ -144,23 +135,18 @@ public class Lecture_Midterm extends AppCompatActivity implements AdapterView.On
                 if(midtermfour.getText().equals("Inheritance and Interface")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermFourInheritanceAndInterface.class);
                     startActivity(intent);
-                    finish();
                 }else if(midtermfour.getText().equals("Method Overriding")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermFourMethodOverriding.class);
                     startActivity(intent);
-                    finish();
                 }else if(midtermfour.getText().equals("Constructors During Inheritance")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermFourConstructorsDuringInheritance.class);
                     startActivity(intent);
-                    finish();
                 }else if(midtermfour.getText().equals("Superclass Method")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermFourSuperclassMethod.class);
                     startActivity(intent);
-                    finish();
                 }else if(midtermfour.getText().equals("Information Hiding")){
                     Intent intent = new Intent(Lecture_Midterm.this, MidtermFourInformationHiding.class);
                     startActivity(intent);
-                    finish();
                 }
             }
         });

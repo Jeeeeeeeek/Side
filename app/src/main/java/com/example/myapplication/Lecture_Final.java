@@ -54,16 +54,13 @@ public class Lecture_Final extends AppCompatActivity implements AdapterView.OnIt
                 if (finalone.getText().equals("Basic Input / Output")) {
                     Intent intent = new Intent(Lecture_Final.this, FinalOne.class);
                     startActivity(intent);
-                    finish();
                 } else if (finalone.getText().equals("File Input/Output")) {
                     Intent intent = new Intent(Lecture_Final.this, FinalOne_FileInputOutput.class);
                     startActivity(intent);
-                    finish();
                 } else if (finalone.getText().equals("File Input/Output Stream")) {
                     Intent intent = new Intent(Lecture_Final.this, FinalOne_FileInputOutputStream.class);
                     startActivity(intent);
-                    finish();
-                }//
+                }
             }
         });
 
@@ -92,63 +89,16 @@ public class Lecture_Final extends AppCompatActivity implements AdapterView.OnIt
                 if (finaltwo.getText().equals("Swing")) {
                     Intent intent = new Intent(Lecture_Final.this, FinalTwo.class);
                     startActivity(intent);
-                    finish();
                 } else if (finaltwo.getText().equals("Layout Manager")) {
                     Intent intent = new Intent(Lecture_Final.this, FinalTwo_LayoutManager.class);
                     startActivity(intent);
-                    finish();
                 } else if (finaltwo.getText().equals("Swing Components")) {
                     Intent intent = new Intent(Lecture_Final.this, FinalTwo_SwingComponents.class);
                     startActivity(intent);
-                    finish();
-                }//
+                }
             }
         });
 
-    //    spinnerfinalthree = (Spinner) findViewById(R.id.spinnerfinalthree);
-    //    ArrayAdapter<CharSequence> adapter6 = ArrayAdapter.createFromResource(this,
-     //           R.array.FinalThreeLessons, R.layout.spinner_item);
-   //     adapter6.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-   //     spinnerfinalthree.setAdapter(adapter6);
-   //     spinnerfinalthree.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-    //        @Override
-    //        public void onItemSelected(AdapterView<?> parent, View view, int pos, long l) {
-      //          finalthree.setText(parent.getItemAtPosition(pos).toString());
-     //       }
-
-       //     @Override
-       //     public void onNothingSelected(AdapterView<?> adapterView) {
-
-       //     }
-     //   });
-
-      //  finalthree = (Button) findViewById(R.id.finalthree);
-      //  finalthree.setOnClickListener(new View.OnClickListener() {
-      //      @Override
-       //     public void onClick(View view) {
-       //         if (finalthree.getText().equals("Applets")) {
-       //             Intent intent = new Intent(Lecture_Final.this, FinalThree.class);
-       //             startActivity(intent);
-        //            finish();
-        //        } else if (finalthree.getText().equals("Applet Class and Life Cycle")) {
-         //           Intent intent = new Intent(Lecture_Final.this, FinalThree_Applet_Class_and_Life_Cycle.class);
-        //            startActivity(intent);
-         //           finish();
-         //       } else if (finalthree.getText().equals("Applet Parameters")) {
-          //          Intent intent = new Intent(Lecture_Final.this, FinalThree_Applet_Parameters.class);
-          //          startActivity(intent);
-          //          finish();
-          //      }else if (finalthree.getText().equals("Event Handling")) {
-          //          Intent intent = new Intent(Lecture_Final.this, FinalThree_Event_Handling.class);
-          //          startActivity(intent);
-           //         finish();
-          //      }else if (finalthree.getText().equals("Image and Sounds")) {
-           //         Intent intent = new Intent(Lecture_Final.this, FinalThree_Image_and_Sounds.class);
-            //        startActivity(intent);
-            //        finish();
-           //     }
-          // }
-       // });
     }
 
     public void openLecture() {

@@ -190,7 +190,7 @@ public class QuizActivity extends AppCompatActivity {
                     .setCancelable(false)
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            Intent intent = new Intent(QuizActivity.this, PrelimQuiz.class);
+                            Intent intent = new Intent(QuizActivity.this, QuizHome.class);
                             startActivity(intent);
                             finish();
                         }
@@ -212,8 +212,8 @@ public class QuizActivity extends AppCompatActivity {
         String quizDetails  = intent.getStringExtra("QuizDetails");
         String quizDetails2  = intent.getStringExtra("QuizDetails2");
 
-        reference = FirebaseDatabase.getInstance().getReference("Quiz").child("PrelimQuiz")
-                .child("Quiz1");
+        reference = FirebaseDatabase.getInstance().getReference("Quiz").child(quizDetails)
+                .child(quizDetails2);
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override

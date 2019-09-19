@@ -9,7 +9,10 @@
         android:roundIcon="@drawable/comprologo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".TimeOutActivity"></activity>
+        <activity android:name=".QuizHome"></activity>
+        <activity android:name=".FinalQuiz" />
+        <activity android:name=".MidtermQuiz" />
+        <activity android:name=".TimeOutActivity" />
         <activity android:name=".FinalTwo_LayoutManager" />
         <activity android:name=".FinalOne_FileInputOutput" />
         <activity android:name=".FinalOne_FileInputOutputStream" />
