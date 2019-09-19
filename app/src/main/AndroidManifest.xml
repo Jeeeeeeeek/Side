@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".TimeOutActivity"></activity>
+        <activity android:name=".QuizHome" />
         <activity android:name=".FinalTwo_LayoutManager" />
         <activity android:name=".FinalOne_FileInputOutput" />
         <activity android:name=".FinalOne_FileInputOutputStream" />
