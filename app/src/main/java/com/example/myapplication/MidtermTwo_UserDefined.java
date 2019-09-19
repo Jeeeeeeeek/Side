@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -18,11 +19,23 @@ public class MidtermTwo_UserDefined extends YouTubeBaseActivity {
     YouTubePlayerView midtermYtView3;
     Button midtermYtButton3;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
+    Button midterm2Bback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_midterm_two__user_defined);
+
+        midterm2Bback = (Button) findViewById(R.id.midtermtwoBback);
+
+        midterm2Bback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermTwo_UserDefined.this, Lecture_Midterm.class);
+                startActivity(intent);
+            }
+        });
+
 
         textViewUserDefined = (TextView)findViewById(R.id.textViewUserDefined);
         textViewUserDefined.setText(Html.fromHtml(getString(R.string.midtermtwo_userdefinedexception)));

@@ -5,19 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg4"
+    android:background="@drawable/bg6"
     tools:context=".Lecture_Midterm">
-    <Button
-        android:paddingLeft="15dp"
-        android:drawableLeft="@drawable/ic_arrow_back"
-        android:id="@+id/btnMidtermBack"
-        android:layout_margin="30dp"
-        android:background="@drawable/roundb"
-        android:text="Back"
-        android:textColor="#000"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content" />
-
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -25,12 +14,26 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/btnMidtermBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/backbutton"
+            app:layout_constraintEnd_toStartOf="@+id/textView29"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/textView29"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="44dp"
             android:text="Midterm Period"
             android:textColor="#000"
             android:textSize="30dp"
@@ -45,11 +48,12 @@
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="88dp"
             android:background="@drawable/roundb_forspinner"
             android:text="Characters, String, and StringBuilder"
-            android:textColor="#000"
+            android:textColor="#FFF"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
@@ -71,14 +75,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="48dp"
             android:layout_marginEnd="50dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/roundb"
             android:text="Exception Handling"
-            android:textColor="#000"
+            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="@+id/midtermone"
-            app:layout_constraintHorizontal_bias="0.39"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/midtermone"
             app:layout_constraintTop_toBottomOf="@+id/midtermone" />
 
@@ -100,13 +104,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="48dp"
             android:layout_marginEnd="50dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/roundb"
             android:text="Arrays and arrayList"
-            android:textColor="#000"
+            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="@+id/midtermone"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/midtermone"
             app:layout_constraintTop_toBottomOf="@+id/midtermtwo" />
 
@@ -128,13 +133,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="48dp"
             android:layout_marginEnd="50dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/roundb"
             android:text="Inheritance and Interface"
-            android:textColor="#000"
+            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="@+id/midtermone"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/midtermone"
             app:layout_constraintTop_toBottomOf="@+id/midtermthree" />
 

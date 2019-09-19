@@ -5,91 +5,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg4"
+    android:background="@drawable/bg6"
     tools:context=".Lecture_Prelim">
 
 
-    <Button
-        android:paddingLeft="15dp"
-        android:drawableLeft="@drawable/ic_arrow_back"
-        android:id="@+id/btnPrelimBack"
-        android:layout_margin="30dp"
-        android:background="@drawable/roundb"
-        android:text="Back"
-        android:textColor="#000"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content" />
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+
         <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="110dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:text="Preliminary Period"
             android:textColor="#000"
             android:textSize="30dp"
-            android:typeface="serif"
             android:textStyle="bold"
-            android:text="Preliminary Period"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/prelimone"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="88dp"
             android:background="@drawable/roundb_forspinner"
             android:text="Introduction"
-            android:textColor="#000" />
+            android:textColor="#FffFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView42" />
 
         <Button
             android:id="@+id/prelimtwo"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="48dp"
             android:background="@drawable/roundb_forspinner"
             android:text="Objective-Oriented Programming Concepts and Principle"
-            android:textColor="#000" />
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prelimone" />
 
         <Button
             android:id="@+id/prelimthree"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="48dp"
             android:background="@drawable/roundb_forspinner"
             android:text="Java Technology"
-            android:textColor="#000" />
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prelimtwo" />
 
         <Button
             android:id="@+id/prelimfour"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
             android:background="@drawable/roundb_forspinner"
             android:text="Java Programming Fundamentals"
-            android:textColor="#000" />
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prelimthree" />
 
         <Button
             android:id="@+id/prelimfive"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="48dp"
             android:background="@drawable/roundb_forspinner"
             android:text="Class, Objectives, Data Types, and Operation"
-            android:textColor="#000" />
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prelimfour" />
 
+        <Button
+            android:id="@+id/btnPrelimBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/backbutton"
+            app:layout_constraintEnd_toStartOf="@+id/textView42"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-
-
-
-
-    </LinearLayout>
 </RelativeLayout>

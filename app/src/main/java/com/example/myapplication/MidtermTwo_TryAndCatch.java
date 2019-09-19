@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -21,6 +22,7 @@ public class MidtermTwo_TryAndCatch extends YouTubeBaseActivity {
     YouTubePlayerView midtermYtView2;
     Button midtermYtButton2;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
+    Button midtermtwoAback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,16 @@ public class MidtermTwo_TryAndCatch extends YouTubeBaseActivity {
 
         textView10 = (TextView)findViewById(R.id.textViewInputOutputStream);
         textView10.setText(Html.fromHtml(getString(R.string.midtermtwo_midtermtryandcatch)));
+
+        midtermtwoAback = (Button) findViewById(R.id.midtermtwoAback);
+
+        midtermtwoAback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermTwo_TryAndCatch.this, Lecture_Midterm.class);
+                startActivity(intent);
+            }
+        });
 
         midtermYtButton2 = (Button) findViewById(R.id.midtermYtButton2);
         midtermYtView2 = (YouTubePlayerView) findViewById(R.id.final1AYtView2);
