@@ -42,7 +42,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2"
                 android:layout_width="387dp"
-                android:layout_height="wrap_content"
+                android:layout_height="801dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginEnd="16dp"
@@ -64,8 +64,8 @@
                 </FrameLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="785dp"
                     android:layout_margin="10dp">
 
                     <TextView
@@ -88,11 +88,11 @@
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="5dp"
-                        android:textColor="#000"
-                        android:text= "We can get any information from the HTML file as a parameter. For this purpose, Applet
+                        android:text="We can get any information from the HTML file as a parameter. For this purpose, Applet
 class provides a method named getParameter(). Syntax: \n \n
             public String getParameter(String parameterName) \n\n
 Example: "
+                        android:textColor="#000"
                         android:textSize="12dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -123,8 +123,8 @@ Example: "
                         android:layout_marginEnd="5dp"
                         android:layout_marginRight="5dp"
                         android:text="myapplet.html"
-                        android:textStyle="bold"
                         android:textColor="#000"
+                        android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"

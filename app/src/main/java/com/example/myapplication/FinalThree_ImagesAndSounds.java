@@ -1,7 +1,5 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -53,7 +51,7 @@ public class FinalThree_ImagesAndSounds extends YouTubeBaseActivity {
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("jsroAqOeOmA");//
+                youTubePlayer.loadVideo("fEPm2Nz6ocM");//
             }
 
             @Override
@@ -69,6 +67,7 @@ public class FinalThree_ImagesAndSounds extends YouTubeBaseActivity {
             }
         });
 
+
         //2nd
             final3DYtButton2 = (Button) findViewById(R.id.final3DYtButton2);
             final3DYtView2 = (YouTubePlayerView) findViewById(R.id.final3DYtView2);
@@ -76,7 +75,7 @@ public class FinalThree_ImagesAndSounds extends YouTubeBaseActivity {
             mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
                 @Override
                 public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                    youTubePlayer.loadVideo("jsroAqOeOmA");//
+                    youTubePlayer.loadVideo("IVLsIM0XxA0");//
                 }
 
                 @Override

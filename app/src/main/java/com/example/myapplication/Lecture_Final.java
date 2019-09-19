@@ -142,7 +142,7 @@ public class Lecture_Final extends AppCompatActivity implements AdapterView.OnIt
                     Intent intent = new Intent(Lecture_Final.this, FinalThree_EventHandling.class);
                     startActivity(intent);
                     finish();
-                }else if (finalthree.getText().equals("Image and Sounds")) {
+                }else if (finalthree.getText().equals("Images and Sounds")) {
                     Intent intent = new Intent(Lecture_Final.this, FinalThree_ImagesAndSounds.class);
                     startActivity(intent);
                     finish();
