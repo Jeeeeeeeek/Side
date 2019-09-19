@@ -535,34 +535,40 @@ method. <br>
     <string name="FinalThreeC1"><![CDATA[
 In the above example, we have created all the controls in init() method because it is invoked only once.
 <br>
-
+<br>
 <b> myapplet.html </b>
 
    ]]></string>
 
     <string name="FinalThreeD"><![CDATA[
 <b> • IMAGES </b> <br>
+<br>
 •An applet can display images of the format GIF, JPEG, BMP, and others. To display an
 image within the applet, you use the drawImage() method found in the java.awt.Graphics
 class.
+<br>
+<br>
+<b> Example: </b>
      ]]></string>
 
 
     <string name="FinalThreeD1"><![CDATA[
 <b> • SOUNDS </b> <br>
+<br>
 An applet can play an audio file represented by the AudioClip interface in the java.applet
 package. The AudioClip interface has three methods, including: <br>
+ <br>
 
 <br>
 •<b>public void play() </b>− Plays the audio clip one time, from the beginning. <br>
-• public void loop()</b>− Causes the audio clip to replay continually. <br>
-• public void stop()</b>− Stops playing the audio clip. <br>
+•<b> public void loop()</b>− Causes the audio clip to replay continually. <br>
+• <b>public void stop()</b>− Stops playing the audio clip. <br>
 <br>
 
 To obtain an AudioClip object, you must invoke the getAudioClip() method of the Applet class.
 The getAudioClip() method returns immediately, whether or not the URL resolves to an actual
 audio file. The audio file is not downloaded until an attempt is made to play the audio clip. <br>
-
+ <br>
 <b> Example: </b>
      ]]></string>
 

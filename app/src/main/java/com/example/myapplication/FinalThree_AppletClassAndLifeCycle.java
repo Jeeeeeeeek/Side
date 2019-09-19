@@ -18,6 +18,7 @@ public class FinalThree_AppletClassAndLifeCycle extends YouTubeBaseActivity {
 
 
     TextView textViewFinalTwo;
+    TextView textViewFinal1;
     YouTubePlayerView final3BYtView1;
     Button final3BYtButton;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
@@ -40,8 +41,8 @@ public class FinalThree_AppletClassAndLifeCycle extends YouTubeBaseActivity {
         textViewFinalTwo = (TextView)findViewById(R.id.textViewFinalThree);
         textViewFinalTwo.setText(Html.fromHtml(getString(R.string.FinalThreeA)));
 
-        textViewFinalTwo = (TextView)findViewById(R.id.textView34);
-        textViewFinalTwo.setText(Html.fromHtml(getString(R.string.FinalThreeA1)));
+        textViewFinal1 = (TextView)findViewById(R.id.textView34);
+        textViewFinal1.setText(Html.fromHtml(getString(R.string.FinalThreeA1)));
 
         textViewFinalTwo = (TextView)findViewById(R.id.textView35);
         textViewFinalTwo.setText(Html.fromHtml(getString(R.string.FinalThreeA2)));
@@ -57,7 +58,7 @@ public class FinalThree_AppletClassAndLifeCycle extends YouTubeBaseActivity {
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo("jsroAqOeOmA");//
+                youTubePlayer.loadVideo("anpYxSLLYaA");//
             }
 
             @Override
