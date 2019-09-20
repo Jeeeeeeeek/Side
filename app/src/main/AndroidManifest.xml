@@ -16,6 +16,7 @@
         <activity android:name=".FinalOne_FileInputOutputStream" />
         <activity android:name=".FinalTwo_SwingComponents" />
         <activity android:name=".FinalTwo" />
+        <activity android:name=".FinalQuiz" />
         <activity android:name=".PrelimQuiz" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".MidtermFourInformationHiding" />
@@ -33,6 +34,7 @@
         <activity android:name=".MidtermTwo_TryAndCatch" />
         <activity android:name=".MidtermTwo" />
         <activity android:name=".MidtermOne" />
+        <activity android:name=".MidtermQuiz" />
         <activity android:name=".PrelimFive" />
         <activity android:name=".Prelimfour" />
         <activity android:name=".PrelimThree" />
