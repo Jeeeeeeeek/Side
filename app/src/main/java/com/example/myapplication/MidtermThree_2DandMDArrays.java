@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.Html;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,7 +17,7 @@ import com.google.android.youtube.player.YouTubePlayerView;
 public class MidtermThree_2DandMDArrays extends YouTubeBaseActivity {
 
     TextView textViewAssertion3;
-
+    Button midtermthreeBback;
     YouTubePlayerView midtermYtView4;
     Button midtermYtButton4;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
@@ -33,6 +34,17 @@ public class MidtermThree_2DandMDArrays extends YouTubeBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_midterm_three_2_dand_mdarrays);
+
+        midtermthreeBback = (Button) findViewById(R.id.midtermthreeBback);
+
+        midtermthreeBback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermThree_2DandMDArrays.this, Lecture_Midterm.class);
+                startActivity(intent);
+            }
+        });
+
 
         midtermYtButton4 = (Button) findViewById(R.id.midtermYtButton4);
         midtermYtView4 = (YouTubePlayerView) findViewById(R.id.midtermYtView4);

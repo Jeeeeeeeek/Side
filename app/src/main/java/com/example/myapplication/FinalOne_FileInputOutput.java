@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Html;
@@ -21,12 +22,23 @@ public class FinalOne_FileInputOutput extends YouTubeBaseActivity {
 
     YouTubePlayerView final1BYtView3;
     Button final1BYtButton3;
+    Button finaloneAback;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_one__file_input_output);
+
+        finaloneAback = (Button) findViewById(R.id.finaloneAback);
+
+        finaloneAback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FinalOne_FileInputOutput.this, Lecture_Final.class);
+                startActivity(intent);
+            }
+        });
 
 
         final1BYtButton3 = (Button) findViewById(R.id.final1BYtButton3);

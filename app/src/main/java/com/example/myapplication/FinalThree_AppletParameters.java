@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ public class FinalThree_AppletParameters extends YouTubeBaseActivity {
 
     YouTubePlayerView final3CYtView1;
     Button final3CYtButton;
+    Button finalthreeBback;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
 
 
@@ -22,6 +24,16 @@ public class FinalThree_AppletParameters extends YouTubeBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_three__applet_parameters);
+
+        finalthreeBback = (Button) findViewById(R.id.finalthreeBback);
+
+        finalthreeBback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FinalThree_AppletParameters.this, Lecture_Final.class);
+                startActivity(intent);
+            }
+        });
 
         ImageView iv = (ImageView)findViewById(R.id.imageView14);
         iv.setImageResource(R.drawable.finalthreeb1);

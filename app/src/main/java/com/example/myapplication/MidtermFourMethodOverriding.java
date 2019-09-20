@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -16,7 +17,7 @@ import com.google.android.youtube.player.YouTubePlayerView;
 public class MidtermFourMethodOverriding extends YouTubeBaseActivity {
 
     TextView textViewAssertion;
-
+    Button midtermfourAback;
     YouTubePlayerView midtermYtView4;
     Button midtermYtButton4;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
@@ -25,6 +26,17 @@ public class MidtermFourMethodOverriding extends YouTubeBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_midterm_four_method_overriding);
+
+        midtermfourAback = (Button) findViewById(R.id.midtermfourAback);
+
+        midtermfourAback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermFourMethodOverriding.this, Lecture_Midterm.class);
+                startActivity(intent);
+            }
+        });
+
 
         textViewAssertion = (TextView)findViewById(R.id.textViewAssertion);
         textViewAssertion.setText(Html.fromHtml(getString(R.string.MidtermFourMethodOverriding)));

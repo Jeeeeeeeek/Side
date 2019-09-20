@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -23,12 +24,25 @@ public class MidtermFourInheritanceAndInterface extends YouTubeBaseActivity {
 
     YouTubePlayerView midtermYtView5;
     Button midtermYtButton5;
+    Button midtermfourback;
     YouTubePlayer.OnInitializedListener mOnInitializedListener2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_midterm_four_inheritance_and_interface);
+
+        midtermfourback = (Button) findViewById(R.id.midtermfourback);
+
+        midtermfourback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermFourInheritanceAndInterface.this, Lecture_Midterm.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         textViewAssertion = (TextView)findViewById(R.id.textViewAssertion);
         textViewAssertion.setText(Html.fromHtml(getString(R.string.MidtermFourInterface)));

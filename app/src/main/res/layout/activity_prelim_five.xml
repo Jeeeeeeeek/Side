@@ -28,6 +28,7 @@
         android:layout_marginTop="60dp"
         android:textAlignment="center"
         android:text="Class, Objects, Data Types, and Operators "
+        android:textStyle="bold"
         android:textColor="#000"
         android:textSize="25dp" />
     <ScrollView

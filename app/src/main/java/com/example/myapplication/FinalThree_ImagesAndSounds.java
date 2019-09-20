@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -18,6 +19,7 @@ public class FinalThree_ImagesAndSounds extends YouTubeBaseActivity {
         YouTubePlayerView final3DYtView1;
         YouTubePlayerView final3DYtView2;
         Button final3DYtButton;
+    Button finalthreeDback;
         Button final3DYtButton2;
         YouTubePlayer.OnInitializedListener mOnInitializedListener;
 
@@ -27,7 +29,18 @@ public class FinalThree_ImagesAndSounds extends YouTubeBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_three__images_and_sounds);
 
-        ImageView iv = (ImageView)findViewById(R.id.imageView13);
+            finalthreeDback = (Button) findViewById(R.id.finalthreeDback);
+
+            finalthreeDback.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(FinalThree_ImagesAndSounds.this, Lecture_Final.class);
+                    startActivity(intent);
+                }
+            });
+
+
+            ImageView iv = (ImageView)findViewById(R.id.imageView13);
         iv.setImageResource(R.drawable.finalthreed1);
 
         ImageView iv1 = (ImageView)findViewById(R.id.imageView14);

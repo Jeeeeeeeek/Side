@@ -20,12 +20,24 @@ public class MidtermThree extends YouTubeBaseActivity {
 
     YouTubePlayerView midtermYtView4;
     Button midtermYtButton4, buttonInitializingArrays, buttonArrayofObjects, button2DandMDArrays;
+    Button midtermthreeback;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_midterm_three);
+
+
+        midtermthreeback = (Button) findViewById(R.id.midtermthreeback);
+
+        midtermthreeback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermThree.this, Lecture_Midterm.class);
+                startActivity(intent);
+            }
+        });
 
         textContent = (TextView)findViewById(R.id.textViewMidtermThree);
         textContent.setText(Html.fromHtml(getString(R.string.midtermthree)));
@@ -56,3 +68,7 @@ public class MidtermThree extends YouTubeBaseActivity {
     }
 
 }
+
+
+
+

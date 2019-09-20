@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Html;
@@ -18,7 +19,7 @@ import com.google.android.youtube.player.YouTubePlayerView;
 public class FinalOne extends YouTubeBaseActivity {
 
     TextView textViewAssertion;
-
+    Button finaloneback;
     YouTubePlayerView finalYTView1;
     Button finalYTButton1;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
@@ -27,6 +28,17 @@ public class FinalOne extends YouTubeBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_one);
+
+
+        finaloneback = (Button) findViewById(R.id.finaloneback);
+
+        finaloneback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FinalOne.this, Lecture_Final.class);
+                startActivity(intent);
+            }
+        });
 
         ImageView imgView=(ImageView) findViewById(R.id.imageView2);
         Drawable drawable  = getResources().getDrawable(R.drawable.example1final);

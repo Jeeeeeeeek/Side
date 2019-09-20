@@ -16,6 +16,11 @@
         <activity android:name=".FinalOne_FileInputOutputStream" />
         <activity android:name=".FinalTwo_SwingComponents" />
         <activity android:name=".FinalTwo" />
+        <activity android:name=".FinalThree" />
+        <activity android:name=".FinalThree_AppletClassAndLifeCycle" />
+        <activity android:name=".FinalThree_AppletParameters" />
+        <activity android:name=".FinalThree_EventHandling" />
+        <activity android:name=".FinalThree_ImagesAndSounds" />
         <activity android:name=".FinalQuiz" />
         <activity android:name=".PrelimQuiz" />
         <activity android:name=".QuizActivity" />

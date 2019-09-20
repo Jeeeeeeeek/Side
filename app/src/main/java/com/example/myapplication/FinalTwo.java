@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -18,12 +19,23 @@ public class FinalTwo extends YouTubeBaseActivity {
     TextView textViewFinalTwo;
     YouTubePlayerView final1AYtView2;
     Button final1AYtButton;
+    Button finaltwoback;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_two);
+
+        finaltwoback = (Button) findViewById(R.id.finaltwoback);
+
+        finaltwoback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FinalTwo.this, Lecture_Final.class);
+                startActivity(intent);
+            }
+        });
 
         ImageView iv = (ImageView)findViewById(R.id.imageView6);
         iv.setImageResource(R.drawable.finaltwo1);

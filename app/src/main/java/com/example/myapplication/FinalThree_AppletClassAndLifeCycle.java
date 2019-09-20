@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -20,6 +21,7 @@ public class FinalThree_AppletClassAndLifeCycle extends YouTubeBaseActivity {
     TextView textViewFinalTwo;
     TextView textViewFinal1;
     YouTubePlayerView final3BYtView1;
+    Button finalthreeAback;
     Button final3BYtButton;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
 
@@ -28,6 +30,16 @@ public class FinalThree_AppletClassAndLifeCycle extends YouTubeBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_three__applet_class_and_life_cycle);
+
+        finalthreeAback = (Button) findViewById(R.id.finalthreeAback);
+
+        finalthreeAback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FinalThree_AppletClassAndLifeCycle.this, Lecture_Final.class);
+                startActivity(intent);
+            }
+        });
 
         ImageView iv = (ImageView)findViewById(R.id.imageView14);
         iv.setImageResource(R.drawable.finalthreea1);

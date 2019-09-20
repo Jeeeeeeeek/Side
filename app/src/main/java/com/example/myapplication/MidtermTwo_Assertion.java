@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -17,12 +18,25 @@ public class MidtermTwo_Assertion extends YouTubeBaseActivity {
     TextView textViewAssertion;
     YouTubePlayerView midtermYtView4;
     Button midtermYtButton4;
+    Button midtermtwoCback;
+
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_midterm_two__assertion);
+
+
+        midtermtwoCback = (Button) findViewById(R.id.midtermtwoCback);
+
+        midtermtwoCback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermTwo_Assertion.this, Lecture_Midterm.class);
+                startActivity(intent);
+            }
+        });
 
         textViewAssertion = (TextView)findViewById(R.id.textViewAssertion);
         textViewAssertion.setText(Html.fromHtml(getString(R.string.midtermtwo_assertions)));
@@ -51,3 +65,5 @@ public class MidtermTwo_Assertion extends YouTubeBaseActivity {
 
     }
 }
+
+

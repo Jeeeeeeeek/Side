@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -25,6 +26,7 @@ public class FinalTwo_LayoutManager extends YouTubeBaseActivity {
     Button final1CYtButton;
     Button final1CYtButton2;
     Button final1CYtButton3;
+    Button finaltwoBback;
     Button final1CYtButton4;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
 
@@ -32,6 +34,17 @@ public class FinalTwo_LayoutManager extends YouTubeBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_two__layout_manager);
+
+        finaltwoBback = (Button) findViewById(R.id.finaltwoBback);
+
+        finaltwoBback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FinalTwo_LayoutManager.this, Lecture_Final.class);
+                startActivity(intent);
+            }
+        });
+
 
         ImageView iv = (ImageView)findViewById(R.id.imageView6);
         iv.setImageResource(R.drawable.finaltwoc1);

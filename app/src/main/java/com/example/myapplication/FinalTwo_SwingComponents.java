@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -18,12 +19,23 @@ public class FinalTwo_SwingComponents extends YouTubeBaseActivity {
 
     YouTubePlayerView final1BYtView2;
     Button final1BYtButton;
+    Button finaltwoAback;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_two__swing_components);
+
+        finaltwoAback = (Button) findViewById(R.id.finaltwoAback);
+
+        finaltwoAback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FinalTwo_SwingComponents.this, Lecture_Final.class);
+                startActivity(intent);
+            }
+        });
 
         ImageView iv = (ImageView)findViewById(R.id.imageView6);
         iv.setImageResource(R.drawable.finaltwob1);

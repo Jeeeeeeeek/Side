@@ -28,6 +28,7 @@
         android:layout_marginTop="60dp"
         android:textAlignment="center"
         android:text="Object-Oriented Programming Concepts and Principles"
+        android:textStyle="bold"
         android:textColor="#000"
         android:textSize="25dp" />
     <ScrollView
