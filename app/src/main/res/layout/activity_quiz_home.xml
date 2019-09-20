@@ -53,7 +53,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="88dp"
         android:background="@drawable/roundb_forspinner"
-        android:text="Quiz 1"
+        android:text="Midterms"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/prelimQuiz" /> />
@@ -64,7 +64,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="88dp"
         android:background="@drawable/roundb_forspinner"
-        android:text="Quiz 1"
+        android:text="Prelims"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView34" /> />
@@ -75,7 +75,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="88dp"
         android:background="@drawable/roundb_forspinner"
-        android:text="Quiz 1"
+        android:text="Finals"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/midtermQuiz" /> />
