@@ -257,7 +257,7 @@ public class QuizActivity extends AppCompatActivity {
         FirebaseUser user = mAuth.getCurrentUser();
 
         if(user != null){
-            DatabaseReference quizRecordReference = FirebaseDatabase.getInstance().getReference("Student").child(user.getUid()).child(quizDetails);
+            DatabaseReference quizRecordReference = FirebaseDatabase.getInstance().getReference("Student").child(user.getUid()).child(quizDetails).child(quizDetails2);
 
             Map<String, Integer> map = new HashMap<>();
             map.put(quizDetails2, mScore);
