@@ -26,7 +26,7 @@ import android.widget.Button;
 public class AssessmentTask extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    Button quiz;
+    Button quiz, assessmenttask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +56,14 @@ public class AssessmentTask extends AppCompatActivity
             public void onClick(View view) {
                 Intent intent = new Intent(AssessmentTask.this, QuizHome.class);
                 startActivity(intent);
+            }
+        });
+
+        assessmenttask = (Button) findViewById(R.id.assessmenttask);
+        assessmenttask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
     }
@@ -108,9 +116,7 @@ public class AssessmentTask extends AppCompatActivity
                 startActivity(g);
                 break;
 
-            // after this lets start copying the above.
-            // FOLLOW MEEEEE>>>
-            //copy this now.
+
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
