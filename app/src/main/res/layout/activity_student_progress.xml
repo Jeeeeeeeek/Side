@@ -157,7 +157,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/CV1Quiz1"
                 app:rcBackgroundColor="#dadfe1"
                 app:rcBackgroundPadding="3dp"
-                app:rcProgressColor="#d91e18" />
+                app:rcProgressColor="#66cc99" />
 
             <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
                 android:id="@+id/prelimQuiz3Progress"

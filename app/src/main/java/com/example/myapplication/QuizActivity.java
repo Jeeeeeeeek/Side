@@ -259,8 +259,8 @@ public class QuizActivity extends AppCompatActivity {
         if(user != null){
             DatabaseReference quizRecordReference = FirebaseDatabase.getInstance().getReference("Student").child(user.getUid()).child(quizDetails).child(quizDetails2);
 
-            Map<String, Integer> map = new HashMap<>();
-            map.put("Score", mScore);
+            Map<String, String> map = new HashMap<>();
+            map.put("Score", Integer.toString(mScore));
 
             quizRecordReference.setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
