@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -28,12 +29,24 @@ public class View_PDF_Files extends AppCompatActivity {
 
     DatabaseReference databaseReference;
     List<uploadPDF> uploadPDFS;
+    Button PDFViewBack;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view__pdf__files);
+
+        PDFViewBack = (Button) findViewById(R.id.PDFViewBack);
+
+        PDFViewBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(View_PDF_Files.this, Home.class);
+                startActivity(intent);
+            }
+        });
+
 
 
         myPDfListView = (ListView) findViewById(R.id.myListView);

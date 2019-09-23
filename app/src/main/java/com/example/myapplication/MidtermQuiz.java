@@ -11,10 +11,21 @@ public class MidtermQuiz extends AppCompatActivity {
 
     Button buttonQz1, buttonQz2, buttonQz3;
 
+    Button midtermquizback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_midterm_quiz);
+
+        midtermquizback = (Button) findViewById(R.id.midtermquizback);
+
+        midtermquizback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MidtermQuiz.this, QuizHome.class);
+                startActivity(intent);
+            }
+        });
 
         buttonQz1 = (Button) findViewById(R.id.buttonQz1);
         buttonQz2 = (Button) findViewById(R.id.buttonQz2);
