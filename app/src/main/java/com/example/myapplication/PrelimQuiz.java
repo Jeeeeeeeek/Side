@@ -17,11 +17,21 @@ public class PrelimQuiz extends AppCompatActivity {
 
     Button buttonQz1, buttonQz2, buttonQz3;
     DatabaseReference reference;
-
+    Button prelimquizback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prelim_quiz);
+
+        prelimquizback = (Button) findViewById(R.id.prelimquizback);
+
+        prelimquizback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PrelimQuiz.this, QuizHome.class);
+                startActivity(intent);
+            }
+        });
 
         buttonQz1 = (Button) findViewById(R.id.buttonQz1);
         buttonQz2 = (Button) findViewById(R.id.buttonQz2);

@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="48dp"
             android:text="Midterm Period"
             android:textColor="#000"
             android:textSize="30dp"
@@ -62,8 +62,8 @@
             android:id="@+id/spinnerMidtermTwo"
             android:layout_width="20dp"
             android:layout_height="15dp"
-            android:layout_marginEnd="70dp"
-            android:layout_marginRight="70dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginRight="67dp"
             android:background="@drawable/dropdown"
             android:clipChildren="false"
             android:elevation="10dp"
@@ -99,8 +99,8 @@
             android:id="@+id/spinnerMidtermThree"
             android:layout_width="20dp"
             android:layout_height="15dp"
-            android:layout_marginEnd="70dp"
-            android:layout_marginRight="70dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginRight="67dp"
             android:background="@drawable/dropdown"
             android:clipChildren="false"
             android:elevation="10dp"
@@ -112,7 +112,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/midtermthree"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/midtermthree"
-            app:layout_constraintVertical_bias="0.514" />
+            app:layout_constraintVertical_bias="0.542" />
 
         <Button
             android:id="@+id/midtermthree"
@@ -136,8 +136,8 @@
             android:id="@+id/spinnerMidtermFour"
             android:layout_width="20dp"
             android:layout_height="15dp"
-            android:layout_marginEnd="70dp"
-            android:layout_marginRight="70dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginRight="67dp"
             android:background="@drawable/dropdown"
             android:clipChildren="false"
             android:elevation="10dp"
@@ -149,7 +149,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/midtermfour"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/midtermfour"
-            app:layout_constraintVertical_bias="0.485" />
+            app:layout_constraintVertical_bias="0.571" />
 
         <Button
             android:id="@+id/midtermfour"

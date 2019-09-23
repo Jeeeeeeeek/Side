@@ -10,11 +10,22 @@ import android.widget.Button;
 public class FinalQuiz extends AppCompatActivity {
 
     Button buttonQz1, buttonQz2, buttonQz3;
-
+    Button finalquizback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_quiz);
+
+        finalquizback = (Button) findViewById(R.id.finalquizback);
+
+        finalquizback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FinalQuiz.this, QuizHome.class);
+                startActivity(intent);
+            }
+        });
+
 
         buttonQz1 = (Button) findViewById(R.id.buttonQz1);
         buttonQz2 = (Button) findViewById(R.id.buttonQz2);

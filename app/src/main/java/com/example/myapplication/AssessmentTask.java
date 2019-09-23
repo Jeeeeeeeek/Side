@@ -27,7 +27,6 @@ public class AssessmentTask extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     Button quiz, assessmenttask;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
