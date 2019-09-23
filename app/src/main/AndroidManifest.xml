@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/comprologo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".TimeOutActivity"></activity>
+        <activity android:name=".StudentProgressActivity"></activity>
+        <activity android:name=".TimeOutActivity" />
         <activity android:name=".QuizHome" />
         <activity android:name=".FinalTwo_LayoutManager" />
         <activity android:name=".FinalOne_FileInputOutput" />
@@ -76,9 +77,9 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

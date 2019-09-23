@@ -172,14 +172,8 @@ public class QuizActivity extends AppCompatActivity {
             mButtonChoice3.setText(choicesArray.get(mQuestionNumber)[2]);
             mButtonChoice4.setText(choicesArray.get(mQuestionNumber)[3]);
 
-        Log.v("FORLOOP mQuestionNumber", ctr + " " + mQuestionNumber + "choice 1 " + choicesArray.get(mQuestionNumber)[0]);
-        Log.v("FORLOOP mQuestionNumber", ctr + " " + mQuestionNumber + "choice 2 " + choicesArray.get(mQuestionNumber)[1]);
-        Log.v("FORLOOP mQuestionNumber", ctr + " " + mQuestionNumber + "choice 3 " + choicesArray.get(mQuestionNumber)[2]);
-        Log.v("FORLOOP mQuestionNumber", ctr + " " + mQuestionNumber + "choice 4 " + choicesArray.get(mQuestionNumber)[3]);
-
             mAnswer = answersArray.get(mQuestionNumber);
 
-            Log.v("FORLOOP mQuestionNumber", ctr + " " + mQuestionNumber + "mAnswer " + mAnswer);
 
             mQuestionNumber++;
 

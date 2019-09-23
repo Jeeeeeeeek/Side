@@ -1,20 +1,27 @@
 package com.example.myapplication;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import android.util.Log;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -31,10 +38,16 @@ import java.util.Date;
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private FirebaseAuth mAuth;
+    ProgressDialog progressDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        mAuth = FirebaseAuth.getInstance();
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -55,7 +68,7 @@ public class Home extends AppCompatActivity
 
         Calendar c = Calendar.getInstance();
         c.set(Calendar.MONTH, 8);
-        c.set(Calendar.DATE, 24);
+        c.set(Calendar.DATE, 26);
         c.set(Calendar.YEAR, 2019);
         Date expirationDate = c.getTime();
 
@@ -67,6 +80,8 @@ public class Home extends AppCompatActivity
             startActivity(i);
             finish();
         }
+
+
 
     }
 
@@ -128,5 +143,35 @@ public class Home extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        progressDialog = new ProgressDialog(Home.this);
+        progressDialog.setMessage("Loading questions");
+        progressDialog.show();
+
+        signInAnonymously();
+    }
+
+
+    private void signInAnonymously() {
+        mAuth.signInAnonymously()
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            Toast.makeText(Home.this, "Welcome", Toast.LENGTH_SHORT).show();
+                            progressDialog.dismiss();
+                        } else {
+                            Toast.makeText(Home.this, "Authentication failed. Check your internet connection",
+                                    Toast.LENGTH_SHORT).show();
+                            progressDialog.dismiss();
+                        }
+                    }
+                });
     }
 }
