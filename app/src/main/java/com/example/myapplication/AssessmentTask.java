@@ -63,7 +63,8 @@ public class AssessmentTask extends AppCompatActivity
         assessmenttask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(AssessmentTask.this, StudentProgressActivity.class);
+                startActivity(intent);
             }
         });
     }

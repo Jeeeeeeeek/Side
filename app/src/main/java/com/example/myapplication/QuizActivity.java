@@ -14,21 +14,23 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 public class QuizActivity extends AppCompatActivity {
 
-    //private QuestionLibrary mQuestionLibrary = new QuestionLibrary();
     DatabaseReference reference;
 
     private TextView mScoreView;
@@ -39,11 +41,15 @@ public class QuizActivity extends AppCompatActivity {
     private Button mButtonChoice4;
     private Button buttonStart;
 
+    String quizDetails, quizDetails2;
+
     private String mAnswer;
     private int mScore = 0;
     private int mQuestionNumber = 0;
 
     ProgressDialog progressDialog;
+
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +62,8 @@ public class QuizActivity extends AppCompatActivity {
         mButtonChoice3 = (Button)findViewById(R.id.choice3);
         mButtonChoice4 = (Button)findViewById(R.id.choice4);
         buttonStart = (Button)findViewById(R.id.buttonStart);
+
+        mAuth = FirebaseAuth.getInstance();
 
         progressDialog = new ProgressDialog(QuizActivity.this);
         progressDialog.setMessage("Loading questions");
@@ -99,7 +107,6 @@ public class QuizActivity extends AppCompatActivity {
         mButtonChoice2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                //My logic for Button goes in here
 
                 if (mButtonChoice2.getText().equals(mAnswer)){
                     mScore = mScore + 1;
@@ -157,7 +164,6 @@ public class QuizActivity extends AppCompatActivity {
 
     }
 
-    //ArrayList<String[]> outerArr = new ArrayList<String[]>();
     ArrayList<String[]> choicesArray;
     ArrayList<String>  questionsArray;
     ArrayList<String> answersArray;
@@ -178,6 +184,7 @@ public class QuizActivity extends AppCompatActivity {
             mQuestionNumber++;
 
         }else{
+            recordQuiz();
             new AlertDialog.Builder(QuizActivity.this)
                     .setTitle("Done!")
                     .setMessage("Congratulations for taking the quiz, your score is " + mScore)
@@ -203,8 +210,8 @@ public class QuizActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         ctr = 0;
-        String quizDetails  = intent.getStringExtra("QuizDetails");
-        String quizDetails2  = intent.getStringExtra("QuizDetails2");
+        quizDetails  = intent.getStringExtra("QuizDetails");
+        quizDetails2  = intent.getStringExtra("QuizDetails2");
 
         reference = FirebaseDatabase.getInstance().getReference("Quiz").child(quizDetails)
                 .child(quizDetails2);
@@ -239,10 +246,54 @@ public class QuizActivity extends AppCompatActivity {
             }
 
 
-
         });
 
+    }
 
+    public void recordQuiz(){
+        progressDialog.setMessage("Recording");
+        progressDialog.show();
+
+        FirebaseUser user = mAuth.getCurrentUser();
+
+        if(user != null){
+            DatabaseReference quizRecordReference = FirebaseDatabase.getInstance().getReference("Student").child(user.getUid()).child(quizDetails);
+
+            Map<String, Integer> map = new HashMap<>();
+            map.put(quizDetails2, mScore);
+
+            quizRecordReference.setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    Toast.makeText(QuizActivity.this, "Quiz recorded successfully.",
+                            Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
+                }
+            });
+
+        }else{
+            signInAnonymously();
+        }
+
+    }
+
+    private void signInAnonymously() {
+        mAuth.signInAnonymously()
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            recordQuiz();
+
+                            progressDialog.dismiss();
+                        } else {
+                            Toast.makeText(QuizActivity.this, "Quiz recording failed. Check your internet connection",
+                                    Toast.LENGTH_SHORT).show();
+
+                            progressDialog.dismiss();
+                        }
+                    }
+                });
     }
 
 
