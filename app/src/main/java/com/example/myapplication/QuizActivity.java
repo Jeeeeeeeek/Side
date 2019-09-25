@@ -99,8 +99,6 @@ public class QuizActivity extends AppCompatActivity {
                     Toast.makeText(QuizActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
                     updateQuestion();
                 }
-
-                Log.v("FORLOOP pinindot", ctr + " " + mQuestionNumber + " sagot mo " + mButtonChoice1.getText());
             }
         });
 
@@ -118,7 +116,6 @@ public class QuizActivity extends AppCompatActivity {
                     Toast.makeText(QuizActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
                     updateQuestion();
                 }
-                Log.v("FORLOOP pinindot", ctr + " " + mQuestionNumber + " sagot mo " + mButtonChoice2.getText());
             }
         });
 
@@ -138,7 +135,6 @@ public class QuizActivity extends AppCompatActivity {
                     Toast.makeText(QuizActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
                     updateQuestion();
                 }
-                Log.v("FORLOOP pinindot", ctr + " " + mQuestionNumber + " sagot mo " + mButtonChoice3.getText());
             }
         });
 
@@ -158,7 +154,6 @@ public class QuizActivity extends AppCompatActivity {
                     Toast.makeText(QuizActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
                     updateQuestion();
                 }
-                Log.v("FORLOOP pinindot", ctr + " " + mQuestionNumber + " sagot mo " + mButtonChoice4.getText());
             }
         });
 
@@ -179,7 +174,6 @@ public class QuizActivity extends AppCompatActivity {
             mButtonChoice4.setText(choicesArray.get(mQuestionNumber)[3]);
 
             mAnswer = answersArray.get(mQuestionNumber);
-
 
             mQuestionNumber++;
 
@@ -244,7 +238,6 @@ public class QuizActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(QuizActivity.this, "Can't connect to the server. Check your internet connection", Toast.LENGTH_SHORT).show();
             }
-
 
         });
 
