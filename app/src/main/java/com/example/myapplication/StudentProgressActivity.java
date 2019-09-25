@@ -4,8 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,12 +42,28 @@ public class StudentProgressActivity extends AppCompatActivity {
 
     ArrayList<Integer> scores;
 
+    Button quizprogressback;
+
     ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_progress);
+
+
+        quizprogressback = (Button) findViewById(R.id.quizprogressback);
+
+        quizprogressback
+                .setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(StudentProgressActivity.this, Home.class);
+                        startActivity(intent);
+                    }
+                });
+
+
 
         mAuth = FirebaseAuth.getInstance();
 
