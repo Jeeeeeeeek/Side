@@ -133,37 +133,39 @@ public class StudentProgressActivity extends AppCompatActivity {
                         scores.add(scoreInt);
                     }
 
-                    if(scores.size() > 2){
-                        prelimQuiz1Progress.setProgress(scores.get(0));
-                        prelimQuiz2Progress.setProgress(scores.get(1));
-                        prelimQuiz3Progress.setProgress(scores.get(2));
 
-                        prelimQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
-                        prelimQuiz2Status.setText(Integer.toString(scores.get(1)) + "/10");
-                        prelimQuiz3Status.setText(Integer.toString(scores.get(2)) + "/10");
-                    }else if(scores.size() > 1){
-                        prelimQuiz1Progress.setProgress(scores.get(0));
-                        prelimQuiz2Progress.setProgress(scores.get(1));
-
-                        prelimQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
-                        prelimQuiz2Status.setText(Integer.toString(scores.get(1)) + "/10");
-                        prelimQuiz3Status.setText("Quiz not taken");
-                    }else if(scores.size() > 0){
-                        prelimQuiz1Progress.setProgress(scores.get(0));
-
-                        prelimQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
-                        prelimQuiz2Status.setText("Quiz not taken");
-                        prelimQuiz3Status.setText("Quiz not taken");
-                    }else if(scores.isEmpty()){
-                        prelimQuiz1Status.setText("Quiz not taken");
-                        prelimQuiz2Status.setText("Quiz not taken");
-                        prelimQuiz3Status.setText("Quiz not taken");
-                    }
 
                     //#f22613
 
-                    getMidtermScores();
+
                 }
+                if(scores.size() > 2){
+                    prelimQuiz1Progress.setProgress(scores.get(0));
+                    prelimQuiz2Progress.setProgress(scores.get(1));
+                    prelimQuiz3Progress.setProgress(scores.get(2));
+
+                    prelimQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
+                    prelimQuiz2Status.setText(Integer.toString(scores.get(1)) + "/10");
+                    prelimQuiz3Status.setText(Integer.toString(scores.get(2)) + "/10");
+                }else if(scores.size() > 1){
+                    prelimQuiz1Progress.setProgress(scores.get(0));
+                    prelimQuiz2Progress.setProgress(scores.get(1));
+
+                    prelimQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
+                    prelimQuiz2Status.setText(Integer.toString(scores.get(1)) + "/10");
+                    prelimQuiz3Status.setText("Quiz not taken");
+                }else if(scores.size() > 0){
+                    prelimQuiz1Progress.setProgress(scores.get(0));
+
+                    prelimQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
+                    prelimQuiz2Status.setText("Quiz not taken");
+                    prelimQuiz3Status.setText("Quiz not taken");
+                }else if(scores.isEmpty()){
+                    prelimQuiz1Status.setText("Quiz not taken");
+                    prelimQuiz2Status.setText("Quiz not taken");
+                    prelimQuiz3Status.setText("Quiz not taken");
+                }
+                getMidtermScores();
             }
 
             @Override
@@ -194,35 +196,38 @@ public class StudentProgressActivity extends AppCompatActivity {
                         scores.add(scoreInt);
                     }
 
-                    if(scores.size() > 2){
-                        midtermQuiz1Progress.setProgress(scores.get(0));
-                        midtermQuiz2Progress.setProgress(scores.get(1));
-                        midtermQuiz3Progress.setProgress(scores.get(2));
 
-                        midtermQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
-                        midtermQuiz2Status.setText(Integer.toString(scores.get(1)) + "/10");
-                        midtermQuiz3Status.setText(Integer.toString(scores.get(2)) + "/10");
-                    }else if(scores.size() > 1){
-                        midtermQuiz1Progress.setProgress(scores.get(0));
-                        midtermQuiz2Progress.setProgress(scores.get(1));
-
-                        midtermQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
-                        midtermQuiz2Status.setText(Integer.toString(scores.get(1)) + "/10");
-                        midtermQuiz3Status.setText("Quiz not taken");
-                    }else if(scores.size() > 0){
-                        midtermQuiz1Progress.setProgress(scores.get(0));
-
-                        midtermQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
-                        midtermQuiz2Status.setText("Quiz not taken");
-                        midtermQuiz3Status.setText("Quiz not taken");
-                    }else if(scores.isEmpty()){
-                        midtermQuiz1Status.setText("Quiz not taken");
-                        midtermQuiz2Status.setText("Quiz not taken");
-                        midtermQuiz3Status.setText("Quiz not taken");
-                    }
-
-                    getFinalScores();
                 }
+
+                if(scores.size() > 2){
+                    midtermQuiz1Progress.setProgress(scores.get(0));
+                    midtermQuiz2Progress.setProgress(scores.get(1));
+                    midtermQuiz3Progress.setProgress(scores.get(2));
+
+                    midtermQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
+                    midtermQuiz2Status.setText(Integer.toString(scores.get(1)) + "/10");
+                    midtermQuiz3Status.setText(Integer.toString(scores.get(2)) + "/10");
+                }else if(scores.size() > 1){
+                    midtermQuiz1Progress.setProgress(scores.get(0));
+                    midtermQuiz2Progress.setProgress(scores.get(1));
+
+                    midtermQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
+                    midtermQuiz2Status.setText(Integer.toString(scores.get(1)) + "/10");
+                    midtermQuiz3Status.setText("Quiz not taken");
+                }else if(scores.size() > 0){
+                    midtermQuiz1Progress.setProgress(scores.get(0));
+
+                    midtermQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
+                    midtermQuiz2Status.setText("Quiz not taken");
+                    midtermQuiz3Status.setText("Quiz not taken");
+                }else if(scores.isEmpty()){
+                    midtermQuiz1Status.setText("Quiz not taken");
+                    midtermQuiz2Status.setText("Quiz not taken");
+                    midtermQuiz3Status.setText("Quiz not taken");
+                }
+
+                getFinalScores();
+
             }
 
             @Override
@@ -249,35 +254,37 @@ public class StudentProgressActivity extends AppCompatActivity {
                         scores.add(scoreInt);
                     }
 
-                    if(scores.size() > 2){
-                        finalQuiz1Progress.setProgress(scores.get(0));
-                        finalQuiz2Progress.setProgress(scores.get(1));
-                        finalQuiz3Progress.setProgress(scores.get(2));
-
-                        finalQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
-                        finalQuiz2Status.setText(Integer.toString(scores.get(1)) + "/10");
-                        finalQuiz3Status.setText(Integer.toString(scores.get(2)) + "/10");
-                    }else if(scores.size() > 1){
-                        finalQuiz1Progress.setProgress(scores.get(0));
-                        finalQuiz2Progress.setProgress(scores.get(1));
-
-                        finalQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
-                        finalQuiz2Status.setText(Integer.toString(scores.get(1)) + "/10");
-                        finalQuiz3Status.setText("Quiz not taken");
-                    }else if(scores.size() > 0){
-                        finalQuiz1Progress.setProgress(scores.get(0));
-
-                        finalQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
-                        finalQuiz2Status.setText("Quiz not taken");
-                        finalQuiz3Status.setText("Quiz not taken");
-                    }else if(scores.isEmpty()){
-                        finalQuiz1Status.setText("Quiz not taken");
-                        finalQuiz2Status.setText("Quiz not taken");
-                        finalQuiz3Status.setText("Quiz not taken");
-                    }
-
-                    progressDialog.dismiss();
                 }
+
+                if(scores.size() > 2){
+                    finalQuiz1Progress.setProgress(scores.get(0));
+                    finalQuiz2Progress.setProgress(scores.get(1));
+                    finalQuiz3Progress.setProgress(scores.get(2));
+
+                    finalQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
+                    finalQuiz2Status.setText(Integer.toString(scores.get(1)) + "/10");
+                    finalQuiz3Status.setText(Integer.toString(scores.get(2)) + "/10");
+                }else if(scores.size() > 1){
+                    finalQuiz1Progress.setProgress(scores.get(0));
+                    finalQuiz2Progress.setProgress(scores.get(1));
+
+                    finalQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
+                    finalQuiz2Status.setText(Integer.toString(scores.get(1)) + "/10");
+                    finalQuiz3Status.setText("Quiz not taken");
+                }else if(scores.size() > 0){
+                    finalQuiz1Progress.setProgress(scores.get(0));
+
+                    finalQuiz1Status.setText(Integer.toString(scores.get(0)) + "/10");
+                    finalQuiz2Status.setText("Quiz not taken");
+                    finalQuiz3Status.setText("Quiz not taken");
+                }else if(scores.isEmpty()){
+                    finalQuiz1Status.setText("Quiz not taken");
+                    finalQuiz2Status.setText("Quiz not taken");
+                    finalQuiz3Status.setText("Quiz not taken");
+                }
+
+                progressDialog.dismiss();
+
             }
 
             @Override
